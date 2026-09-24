@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fairy_snow_white",
+    "category": "fairy_tale",
+    "name": "白雪姫（老婆に変装）",
+    "text": "女王は行商人の老婆に身をやつし、毒リンゴを白雪姫に差し出した",
+    "expected": "disguised",
+    "description": "「身をやつす」という古典的暗喩による外見の変装。"
+  },
+  {
+    "id": "fairy_cinderella",
+    "category": "fairy_tale",
+    "name": "シンデレラ（名乗らぬまま）",
+    "text": "灰まみれの娘は、誰にも名乗らぬまま舞踏会で王子と踊り、真夜中の鐘とともに走り去った",
+    "expected": "disguised",
+    "description": "正体を明かさず身分を隠して舞踏会に参加している。"
+  },
+  {
+    "id": "fairy_wolf_boy",
+    "category": "fairy_tale",
+    "name": "狼少年（単なる嘘）",
+    "text": "羊飼いの少年は「狼が来た」と叫んだが、それは嘘だった",
+    "expected": "not_disguised",
+    "description": "発言内容が虚偽（嘘）であるが、羊飼いという正体や身分は隠していない。"
+  },
+  {
+    "id": "fairy_kaguya",
+    "category": "fairy_tale",
+    "name": "かぐや姫（秘密の告白）",
+    "text": "かぐや姫は自分が月の都の者であることを、育ての翁についに打ち明けた",
+    "expected": "not_disguised",
+    "description": "隠していた本来の正体を開示（打ち明け）した瞬間。"
+  },
+  {
+    "id": "fairy_crane",
+    "category": "fairy_tale",
+    "name": "鶴の恩返し（覗かないで）",
+    "text": "鶴は「機を織るあいだ、決して覗かないでください」と言い、夜ごと戸を閉てた",
+    "expected": "not_disguised",
+    "description": "物理的な視線遮断（戸を閉める）であり、変装や正体偽装ではない。"
+  },
+  {
+    "id": "deception_actor",
+    "category": "deception_vs_disguise",
+    "name": "名優の演技（役柄の嘘）",
+    "text": "俳優は壇上で涙を流し、愛する人を失った男を迫真の演技で演じきった",
+    "expected": "not_disguised",
+    "description": "舞台上で虚構の感情を演じているが、俳優自身の身分を隠蔽してはいない。"
+  },
+  {
+    "id": "deception_april_fool",
+    "category": "deception_vs_disguise",
+    "name": "エイプリルフール（日常の言葉の嘘）",
+    "text": "少女は『明日宇宙旅行に行くの』と友達に嘘をついて笑い合った",
+    "expected": "not_disguised",
+    "description": "単なる冗談・発言の嘘であり、身分や正体の偽装ではない。"
+  },
+  {
+    "id": "identity_impostor",
+    "category": "deception_vs_disguise",
+    "name": "身分詐称（偽名刺・無変装）",
+    "text": "男は偽の名刺を差し出し、大手銀行の監査役だと偽ってビルに侵入した",
+    "expected": "disguised",
+    "description": "服装の変装はないが、社会的な正体・身分を意図的に偽っている。"
+  },
+  {
+    "id": "identity_spy_reveal",
+    "category": "identity_disclosure",
+    "name": "スパイ身分提示（正体開示）",
+    "text": "潜入捜査官はついに警察手帳を提示し、自分が捜査官であることを明かした",
+    "expected": "not_disguised",
+    "description": "潜入という過去の状態から、身分証を提示して真の正体を開示した。"
+  },
+  {
+    "id": "identity_ramen_confession",
+    "category": "identity_disclosure",
+    "name": "ラーメン告白（行動の秘密告白）",
+    "text": "彼は夜中にこっそりラーメンを食べていたことを家族に打ち明けた",
+    "expected": "not_disguised",
+    "description": "行動の秘密の告白であり、正体や身分の問題ではない。"
+  },
+  {
+    "id": "physical_pollen_mask",
+    "category": "physical_vs_identity",
+    "name": "花粉症マスク（実用遮蔽）",
+    "text": "花粉症の男は、大きな不織布マスクと花粉用ゴーグルをつけて街を歩いた",
+    "expected": "not_disguised",
+    "description": "顔が物理的に覆われているが、目的は実用であり正体隠蔽ではない。"
+  },
+  {
+    "id": "physical_curtain_privacy",
+    "category": "physical_vs_identity",
+    "name": "着替えカーテン（目隠し）",
+    "text": "彼女は着替えのため、部屋のカーテンを閉めて内側から鍵をかけた",
+    "expected": "not_disguised",
+    "description": "私的空間の視線遮断であり、変装や正体隠蔽ではない。"
+  },
+  {
+    "id": "identity_pen_name",
+    "category": "physical_vs_identity",
+    "name": "ペンネーム作家（正体秘匿）",
+    "text": "大ヒット小説の作者は本名や素顔を一切明かさず、ペンネームでのみ執筆を続けている",
+    "expected": "disguised",
+    "description": "物理的変装はないが、社会的に本名や素顔を完全に秘匿・偽装している。"
+  }
+]

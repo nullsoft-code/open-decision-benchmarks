@@ -1,0 +1,240 @@
+{
+  "legacy": [
+    {
+      "id": "snow_white",
+      "name": "白雪姫（身をやつす）",
+      "exp": "disguised",
+      "disguised_prob": 0.9846827387809753,
+      "not_disguised_prob": 0.01531726960092783,
+      "latency_ms": 11412.05863099998,
+      "is_correct": true
+    },
+    {
+      "id": "cinderella",
+      "name": "シンデレラ（名乗らぬまま）",
+      "exp": "disguised",
+      "disguised_prob": 0.9717698693275452,
+      "not_disguised_prob": 0.028230175375938416,
+      "latency_ms": 103.85601300001213,
+      "is_correct": true
+    },
+    {
+      "id": "wolf_boy",
+      "name": "狼少年（単なる嘘）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.28076931834220886,
+      "not_disguised_prob": 0.7192307114601135,
+      "latency_ms": 104.78128500000139,
+      "is_correct": true
+    },
+    {
+      "id": "kaguya",
+      "name": "かぐや姫（秘密の告白）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.0327870212495327,
+      "not_disguised_prob": 0.967212975025177,
+      "latency_ms": 104.18221800000538,
+      "is_correct": true
+    },
+    {
+      "id": "crane",
+      "name": "鶴の恩返し（覗かないで）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.1992211788892746,
+      "not_disguised_prob": 0.8007788062095642,
+      "latency_ms": 103.59105200001295,
+      "is_correct": true
+    },
+    {
+      "id": "actor",
+      "name": "名優の演技（役柄の嘘）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.2178046703338623,
+      "not_disguised_prob": 0.7821952700614929,
+      "latency_ms": 97.81426600000032,
+      "is_correct": true
+    },
+    {
+      "id": "april_fool",
+      "name": "エイプリルフール（発言の嘘）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.206907257437706,
+      "not_disguised_prob": 0.793092668056488,
+      "latency_ms": 95.65605599999571,
+      "is_correct": true
+    },
+    {
+      "id": "impostor",
+      "name": "身分詐称（偽名刺・無変装）",
+      "exp": "disguised",
+      "disguised_prob": 0.964695155620575,
+      "not_disguised_prob": 0.03530484437942505,
+      "latency_ms": 95.67405800001438,
+      "is_correct": true
+    },
+    {
+      "id": "spy",
+      "name": "スパイ身分提示（正体開示）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.2694762349128723,
+      "not_disguised_prob": 0.7305237650871277,
+      "latency_ms": 93.28073800000425,
+      "is_correct": true
+    },
+    {
+      "id": "ramen",
+      "name": "ラーメン告白（行動の告白）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.010359798558056355,
+      "not_disguised_prob": 0.9896401762962341,
+      "latency_ms": 93.4934050000038,
+      "is_correct": true
+    },
+    {
+      "id": "mask",
+      "name": "花粉症マスク（実用遮蔽）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.432127445936203,
+      "not_disguised_prob": 0.5678725838661194,
+      "latency_ms": 95.87836099998981,
+      "is_correct": true
+    },
+    {
+      "id": "curtain",
+      "name": "着替えカーテン（目隠し）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.12161745876073837,
+      "not_disguised_prob": 0.8783825635910034,
+      "latency_ms": 111.61474499999713,
+      "is_correct": true
+    },
+    {
+      "id": "pen_name",
+      "name": "ペンネーム作家（正体秘匿）",
+      "exp": "disguised",
+      "disguised_prob": 0.9738431572914124,
+      "not_disguised_prob": 0.02615681290626526,
+      "latency_ms": 100.9666100000004,
+      "is_correct": true
+    }
+  ],
+  "reframed": [
+    {
+      "id": "snow_white",
+      "name": "白雪姫（身をやつす）",
+      "exp": "disguised",
+      "disguised_prob": 0.9606115818023682,
+      "not_disguised_prob": 0.039388373494148254,
+      "latency_ms": 97.27663799998254,
+      "is_correct": true
+    },
+    {
+      "id": "cinderella",
+      "name": "シンデレラ（名乗らぬまま）",
+      "exp": "disguised",
+      "disguised_prob": 0.9397495985031128,
+      "not_disguised_prob": 0.060250360518693924,
+      "latency_ms": 104.2247379999992,
+      "is_correct": true
+    },
+    {
+      "id": "wolf_boy",
+      "name": "狼少年（単なる嘘）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.5388680696487427,
+      "not_disguised_prob": 0.4611319601535797,
+      "latency_ms": 91.51013199999625,
+      "is_correct": false
+    },
+    {
+      "id": "kaguya",
+      "name": "かぐや姫（秘密の告白）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.4300713539123535,
+      "not_disguised_prob": 0.5699286460876465,
+      "latency_ms": 115.32615800001622,
+      "is_correct": true
+    },
+    {
+      "id": "crane",
+      "name": "鶴の恩返し（覗かないで）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.3517215847969055,
+      "not_disguised_prob": 0.6482784152030945,
+      "latency_ms": 101.18851900000436,
+      "is_correct": true
+    },
+    {
+      "id": "actor",
+      "name": "名優の演技（役柄の嘘）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.021134739741683006,
+      "not_disguised_prob": 0.9788652658462524,
+      "latency_ms": 92.14899400001286,
+      "is_correct": true
+    },
+    {
+      "id": "april_fool",
+      "name": "エイプリルフール（発言の嘘）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.5160893201828003,
+      "not_disguised_prob": 0.4839106798171997,
+      "latency_ms": 96.22837700001696,
+      "is_correct": false
+    },
+    {
+      "id": "impostor",
+      "name": "身分詐称（偽名刺・無変装）",
+      "exp": "disguised",
+      "disguised_prob": 0.9910551309585571,
+      "not_disguised_prob": 0.008944821543991566,
+      "latency_ms": 95.31489100001522,
+      "is_correct": true
+    },
+    {
+      "id": "spy",
+      "name": "スパイ身分提示（正体開示）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.023804381489753723,
+      "not_disguised_prob": 0.9761956334114075,
+      "latency_ms": 109.69581199998402,
+      "is_correct": true
+    },
+    {
+      "id": "ramen",
+      "name": "ラーメン告白（行動の告白）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.04669400304555893,
+      "not_disguised_prob": 0.9533060789108276,
+      "latency_ms": 109.24207200000069,
+      "is_correct": true
+    },
+    {
+      "id": "mask",
+      "name": "花粉症マスク（実用遮蔽）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.0594332255423069,
+      "not_disguised_prob": 0.9405667185783386,
+      "latency_ms": 96.66654800000174,
+      "is_correct": true
+    },
+    {
+      "id": "curtain",
+      "name": "着替えカーテン（目隠し）",
+      "exp": "not_disguised",
+      "disguised_prob": 0.0997772067785263,
+      "not_disguised_prob": 0.9002227783203125,
+      "latency_ms": 98.81130200000143,
+      "is_correct": true
+    },
+    {
+      "id": "pen_name",
+      "name": "ペンネーム作家（正体秘匿）",
+      "exp": "disguised",
+      "disguised_prob": 0.9869638085365295,
+      "not_disguised_prob": 0.013036261312663555,
+      "latency_ms": 93.50964099999715,
+      "is_correct": true
+    }
+  ]
+}

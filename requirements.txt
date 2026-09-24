@@ -1,0 +1,9 @@
+# Core dependencies
+typesafe-sdk>=0.1.0
+python-dotenv>=1.0.0
+torch>=2.2.0
+transformers>=4.40.0
+requests>=2.31.0
+
+# Optional / Specific model support
+# causal-conv1d>=1.4.0 (Required for Kev-4B full speed, build from source on CUDA)
