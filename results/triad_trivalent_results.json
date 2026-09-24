@@ -1,0 +1,218 @@
+[
+  {
+    "id": "sec_level1",
+    "scenario": "セキュリティ調査",
+    "level": "レベル1（ほぼ確定できそう）",
+    "3choice": {
+      "jev": {
+        "almost_certain": 0.76,
+        "uncertain": 0.24,
+        "impossible": 0.0
+      },
+      "kev": {
+        "almost_certain": 0.542,
+        "uncertain": 0.391,
+        "impossible": 0.067
+      },
+      "qwen": {
+        "almost_certain": 0.238,
+        "uncertain": 0.507,
+        "impossible": 0.256
+      }
+    },
+    "2choice": {
+      "jev": {
+        "yes": 0.43,
+        "no": 0.57
+      },
+      "kev": {
+        "yes": 0.579,
+        "no": 0.421
+      },
+      "qwen": {
+        "yes": 0.243,
+        "no": 0.757
+      }
+    }
+  },
+  {
+    "id": "sec_level2",
+    "scenario": "セキュリティ調査",
+    "level": "レベル2（どちらとも言えない）",
+    "3choice": {
+      "jev": {
+        "almost_certain": 0.0,
+        "uncertain": 0.75,
+        "impossible": 0.25
+      },
+      "kev": {
+        "almost_certain": 0.055,
+        "uncertain": 0.701,
+        "impossible": 0.244
+      },
+      "qwen": {
+        "almost_certain": 0.242,
+        "uncertain": 0.41,
+        "impossible": 0.348
+      }
+    },
+    "2choice": {
+      "jev": {
+        "yes": 0.0,
+        "no": 1.0
+      },
+      "kev": {
+        "yes": 0.04,
+        "no": 0.96
+      },
+      "qwen": {
+        "yes": 0.132,
+        "no": 0.868
+      }
+    }
+  },
+  {
+    "id": "sec_level3",
+    "scenario": "セキュリティ調査",
+    "level": "レベル3（確定するのは不可能）",
+    "3choice": {
+      "jev": {
+        "almost_certain": 0.0,
+        "uncertain": 0.07,
+        "impossible": 0.93
+      },
+      "kev": {
+        "almost_certain": 0.027,
+        "uncertain": 0.161,
+        "impossible": 0.812
+      },
+      "qwen": {
+        "almost_certain": 0.111,
+        "uncertain": 0.113,
+        "impossible": 0.776
+      }
+    },
+    "2choice": {
+      "jev": {
+        "yes": 0.0,
+        "no": 1.0
+      },
+      "kev": {
+        "yes": 0.053,
+        "no": 0.947
+      },
+      "qwen": {
+        "yes": 0.113,
+        "no": 0.887
+      }
+    }
+  },
+  {
+    "id": "churn_level1",
+    "scenario": "顧客解約予測",
+    "level": "レベル1（ほぼ確定できそう）",
+    "3choice": {
+      "jev": {
+        "almost_certain": 0.87,
+        "uncertain": 0.13,
+        "impossible": 0.0
+      },
+      "kev": {
+        "almost_certain": 0.916,
+        "uncertain": 0.068,
+        "impossible": 0.016
+      },
+      "qwen": {
+        "almost_certain": 0.278,
+        "uncertain": 0.492,
+        "impossible": 0.231
+      }
+    },
+    "2choice": {
+      "jev": {
+        "yes": 0.55,
+        "no": 0.45
+      },
+      "kev": {
+        "yes": 0.921,
+        "no": 0.079
+      },
+      "qwen": {
+        "yes": 0.461,
+        "no": 0.539
+      }
+    }
+  },
+  {
+    "id": "churn_level2",
+    "scenario": "顧客解約予測",
+    "level": "レベル2（どちらとも言えない）",
+    "3choice": {
+      "jev": {
+        "almost_certain": 0.0,
+        "uncertain": 0.96,
+        "impossible": 0.04
+      },
+      "kev": {
+        "almost_certain": 0.252,
+        "uncertain": 0.568,
+        "impossible": 0.18
+      },
+      "qwen": {
+        "almost_certain": 0.251,
+        "uncertain": 0.48,
+        "impossible": 0.268
+      }
+    },
+    "2choice": {
+      "jev": {
+        "yes": 0.0,
+        "no": 1.0
+      },
+      "kev": {
+        "yes": 0.401,
+        "no": 0.599
+      },
+      "qwen": {
+        "yes": 0.187,
+        "no": 0.813
+      }
+    }
+  },
+  {
+    "id": "churn_level3",
+    "scenario": "顧客解約予測",
+    "level": "レベル3（確定するのは不可能）",
+    "3choice": {
+      "jev": {
+        "almost_certain": 0.0,
+        "uncertain": 0.32,
+        "impossible": 0.68
+      },
+      "kev": {
+        "almost_certain": 0.068,
+        "uncertain": 0.485,
+        "impossible": 0.447
+      },
+      "qwen": {
+        "almost_certain": 0.289,
+        "uncertain": 0.254,
+        "impossible": 0.457
+      }
+    },
+    "2choice": {
+      "jev": {
+        "yes": 0.0,
+        "no": 1.0
+      },
+      "kev": {
+        "yes": 0.041,
+        "no": 0.959
+      },
+      "qwen": {
+        "yes": 0.172,
+        "no": 0.828
+      }
+    }
+  }
+]

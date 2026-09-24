@@ -31,7 +31,10 @@ open-decision-benchmarks/
 ├── data/                        # ベンチマークデータセット（ハードコード全廃）
 │   ├── prompts.json             # 命題定義（旧命題 / 新命題）
 │   ├── boundary_cases.json      # 境界識別力テストケース（13問）
-│   └── dice_cases.json          # 6面・100面サイコロ確率較正ケース
+│   ├── dice_cases.json          # 6面・100面サイコロ確率較正ケース
+│   ├── ood_cases.json           # 未知・架空・未観測知識テストケース（13問）
+│   ├── route_rule_cases.json    # 条件付きルール判定ケース（3問）
+│   └── trivalent_cases.json     # 証拠グラデーション・三値論理ケース（6問）
 │
 ├── models/                      # モデル実行アダプター
 │   ├── base.py                  # BaseDecisionRunner 基底クラス
@@ -43,7 +46,10 @@ open-decision-benchmarks/
     ├── summary_table.md         # マークダウン形式の集計比較表
     ├── jev_results.json         # 本家 Jev の実測生データ
     ├── kev_results.json         # Kev-4B の実測生データ
-    └── qwen_results.json        # Qwen3.5-4B の実測生データ
+    ├── qwen_results.json        # Qwen3.5-4B の実測生データ
+    ├── triad_ood_results.json   # 未知知識・ランダム事象の3モデル比較生データ
+    ├── triad_route_results.json # 条件付きルール判定の3モデル比較生データ
+    └── triad_trivalent_results.json # 三値論理・証拠グラデーション比較生データ
 ```
 
 ---
@@ -98,6 +104,10 @@ python run_benchmark.py --model all --task boundary
   旧命題・新命題の全 26 試行において **100% 正解（誤検知ゼロ）** を達成。実務での意味grep（全行ダイレクト走査）における強固な安定性を裏付け。
 - **命題設計（Re-framing）の威力**:  
   花粉症マスクや着替えカーテンなどの物理遮蔽において、対称な命題（身分や正体を意図的に偽り隠蔽しているか？）を再定義することで、全モデルが一斉に非該当（1〜5%）へとシャープに較正されることを実証。
+- **未知知識と閉世界仮説（OOD検証）**:  
+  Jevは架空命題やコインの表裏（理論値50%）すら **No 79%〜94%** で冷酷に切り捨てる極端な閉世界証拠主義を示す一方、Kev-4Bはコイン表裏で **49.7% vs 50.3%** と数学的対称性を忠実に再現。
+- **三値論理（Trivalent Logic）のブレークスルー**:  
+  Yes/No二値判定ではグレーゾーンが「No 100%」に潰れて見逃されるが、Choice 3択（ほぼ確定 / どちらとも言えない / 確定不可能）を与えると、Jev・Kev・Qwen全モデルが **70%〜96% で「保留」を完璧に分離・識別** することを発見。
 
 ---
 

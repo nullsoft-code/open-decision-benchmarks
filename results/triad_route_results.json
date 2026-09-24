@@ -1,0 +1,52 @@
+[
+  {
+    "id": "single_with_prob",
+    "name": "単一試行（確率言及あり）",
+    "jev": {
+      "left": 1.0,
+      "right": 0.0
+    },
+    "kev": {
+      "left": 0.995,
+      "right": 0.005
+    },
+    "qwen": {
+      "left": 0.689,
+      "right": 0.311
+    }
+  },
+  {
+    "id": "single_direct",
+    "name": "単一試行（直接二択・確率非言及）",
+    "jev": {
+      "left": 0.96,
+      "right": 0.04
+    },
+    "kev": {
+      "left": 0.804,
+      "right": 0.196
+    },
+    "qwen": {
+      "left": null,
+      "right": null,
+      "note": "数値トークン(1/2)への分散"
+    }
+  },
+  {
+    "id": "ten_trials",
+    "name": "10回試行（全体傾向）",
+    "jev": {
+      "left": 1.0,
+      "right": 0.0
+    },
+    "kev": {
+      "left": 0.992,
+      "right": 0.008
+    },
+    "qwen": {
+      "left": null,
+      "right": null,
+      "note": "数値トークン(1/2)への分散"
+    }
+  }
+]
