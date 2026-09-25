@@ -8,4 +8,10 @@ try:
 except ImportError:
     KevRunner = None
 
-__all__ = ["BaseDecisionRunner", "JevRunner", "QwenRunner", "KevRunner"]
+try:
+    from .clm_runner import CLMRunner
+except ImportError:
+    CLMRunner = None
+
+__all__ = ["BaseDecisionRunner", "JevRunner", "QwenRunner", "KevRunner", "CLMRunner"]
+

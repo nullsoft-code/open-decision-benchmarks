@@ -18,7 +18,7 @@ try:
 except ImportError:
     pass
 
-from models import JevRunner, QwenRunner, KevRunner
+from models import JevRunner, QwenRunner, KevRunner, CLMRunner
 
 ROOT_DIR = Path(__file__).resolve().parent
 DATA_DIR = ROOT_DIR / "data"
@@ -106,7 +106,7 @@ def format_summary_markdown(boundary_data: Dict[str, Any], cases: List[Dict[str,
 
 def main():
     parser = argparse.ArgumentParser(description="Open Decision Models Benchmark CLI")
-    parser.add_argument("--model", type=str, default="all", choices=["all", "jev", "qwen", "kev"],
+    parser.add_argument("--model", type=str, default="all", choices=["all", "jev", "qwen", "kev", "clm"],
                         help="Model to test (default: all)")
     parser.add_argument("--task", type=str, default="boundary", choices=["boundary", "dice", "all"],
                         help="Benchmark task (default: boundary)")
@@ -141,6 +141,16 @@ def main():
                 print(f"[Skip] KevRunner could not be initialized: {e}")
         else:
             print("[Skip] KevRunner module not available in this environment.")
+
+    if args.model in ["all", "clm"]:
+        if CLMRunner is not None:
+            try:
+                runners.append(CLMRunner())
+                print("[Init] CLMRunner initialized.")
+            except Exception as e:
+                print(f"[Skip] CLMRunner could not be initialized: {e}")
+        else:
+            print("[Skip] CLMRunner module not available in this environment.")
 
     if not runners:
         print("Error: No models could be initialized.")
