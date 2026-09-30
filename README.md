@@ -12,7 +12,7 @@ TypeSafe AI によるプロプライエタリな判断モデル **Jev**、オー
 ## 🎯 主な検証スコープ
 
 1. **S1Bench（300問）統一評価**:
-   - `levbench`（TypeSafe ADR-010 `/v1/systemone` 統一プロトコル）公式ハーネスおよびスタンドアロン実行による厳密測定。
+   - `levbench`（TypeSafe ADR-010 `/v1/systemone` 規格準拠の統一ハーネス: Interfaze AI開発）およびスタンドアロン実行による厳密測定。
    - Macro Accuracy、5タスク分類正解率、Log-Loss、Brier Score、ECE（較正誤差）、p50レイテンシ、VRAM消費量の網羅的計測。
 2. **Phase 2: 長文契約書・仕様書ベンチマーク（15問 / 2,000〜4,500+ トークン）**:
    - 個別業務合意書およびNDA・API仕様書から、局所例外規定や発効条件を判定する実務文書タスク。
@@ -151,7 +151,7 @@ python servers/sglang_systemone_adapter.py --port 8002 --host 127.0.0.1
 
 ### 2. 各ベンチマークの実行
 
-#### levbench 公式ハーネスの実行（例: Jeff-0.8B）:
+#### levbench 統一ハーネスの実行（例: Jeff-0.8B）:
 ```bash
 levbench run --url http://127.0.0.1:8092/v1/systemone --token test --tasks data/levbench_tasks
 ```
