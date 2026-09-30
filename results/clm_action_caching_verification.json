@@ -1,0 +1,55 @@
+{
+  "description": "CLM-8B (Contrastive Language Model) Action Caching Empirical Verification",
+  "model": "CLM-8B (Qwen3-8B contrastive dual-encoder)",
+  "hardware": "NVIDIA GeForce RTX 3090 (24GB)",
+  "summary": {
+    "favorable_scenarios": [
+      "Fixed Action Space Intent Classification (massive-en-US): Cold 0.0% (266.5ms) -> Action Cached 44.0% (98.1ms, 2.7x speedup)",
+      "High-Frequency Tick Policy (Rocket League 3v3 tick): Cold 808.4ms -> Action Cached 115.6ms (7.0x speedup)",
+      "Declarative Action Reframing (Fairy Tale Deception): Legacy keyword-trapped 30.8% -> Reframed Cached Actions 84.6%"
+    ],
+    "unfavorable_scenarios": [
+      "Tri-State Epistemic Ambiguity: Softmax with large scaling parameter collapses uncertain probability to 11.4% (85.9% polarized to Impossible)",
+      "Long-Context Information Retrieval (Phase 2): Mean-pooled Bi-Encoder dilutes localized clauses, achieving only 40.0% (13/15 defaulted to False)"
+    ]
+  },
+  "benchmarks": {
+    "massive_en_US_60_intents": {
+      "cached_accuracy": 0.44,
+      "cached_latency_ms": 98.07,
+      "cold_latency_ms": 266.50,
+      "cold_accuracy": 0.0,
+      "speedup_factor": 2.72,
+      "observation": "Removing dictionary string serialization noise and pre-encoding the 60 intent embeddings enabled 44% accuracy with sub-100ms response."
+    },
+    "rocket_league_agent_tick": {
+      "cold_tick_ms": 808.41,
+      "cached_tick_ms": 115.63,
+      "speedup_factor": 6.99,
+      "num_actions": 12,
+      "num_questions": 4,
+      "observation": "Action caching turns 8B LLM inference into a single state-encoding pass followed by 12 vector dot products, enabling real-time game tick loop."
+    },
+    "fairy_tale_deception_boundary": {
+      "legacy_keyword_accuracy": 0.3077,
+      "reframed_cached_accuracy": 0.8462,
+      "num_cases": 13,
+      "correct_cases": "11/13",
+      "observation": "Formulating choices as explicit declarative behavioral assertions ('Wolf disguises itself to deceive') overcomes surface word association traps."
+    },
+    "tri_state_epistemic_collapse": {
+      "mean_uncertain_prob_percent": 11.41,
+      "mean_impossible_prob_percent": 85.89,
+      "mean_possible_prob_percent": 2.70,
+      "collapsed": true,
+      "observation": "Contrastive logit scaling (alpha approx 100) polarizes probabilities, crushing nuanced uncertainty into near-zero confidence."
+    },
+    "long_context_contract_extraction": {
+      "accuracy": 0.40,
+      "correct_cases": "6/15",
+      "avg_latency_sec": 0.78,
+      "broken": true,
+      "observation": "Bi-encoder sentence pooling averages 2,000+ tokens, diluting specific contract clauses. 13 out of 15 queries defaulted to False."
+    }
+  }
+}

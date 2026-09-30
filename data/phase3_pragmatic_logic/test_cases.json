@@ -1,0 +1,282 @@
+[
+  {
+    "id": "pragmatic_01_ja_neg_q",
+    "category": "Negative Question QA",
+    "language": "ja",
+    "state": "カスタマーサポートのチャットログ:「お客様、先週発送いたしました認証コードの通知ハガキは届いていませんでしょうか？」「はい、まだ届いておりません。」",
+    "question_key": "delivery_status",
+    "instructions": "顧客の手元に通知ハガキは届いていますか？",
+    "criteria": {
+      "1": "届いている",
+      "2": "届いていない"
+    },
+    "expected": "2",
+    "explanation": "日本語の否定疑問文に対する『はい』は、否定事実（届いていないこと）に対する肯定であるため、届いていない。"
+  },
+  {
+    "id": "pragmatic_02_ja_neg_q_reverse",
+    "category": "Negative Question QA",
+    "language": "ja",
+    "state": "社内確認チャット:「鈴木さん、明日の定例ミーティングの資料はまだ完成していない感じですか？」「いいえ、もう完成していますよ。」",
+    "question_key": "completion_status",
+    "instructions": "鈴木さんの資料は完成していますか？",
+    "criteria": {
+      "1": "完成している",
+      "2": "完成していない"
+    },
+    "expected": "1",
+    "explanation": "日本語の否定疑問文に対する『いいえ』は否定内容（完成していない）を否定するため、完成している。"
+  },
+  {
+    "id": "pragmatic_03_en_neg_q",
+    "category": "Negative Question QA",
+    "language": "en",
+    "state": "Support Ticket: \"Did you not receive the verification email sent yesterday?\" Customer response: \"No, I did not receive anything.\"",
+    "question_key": "email_status",
+    "instructions": "Did the customer receive the verification email?",
+    "criteria": {
+      "1": "Yes, received",
+      "2": "No, did not receive"
+    },
+    "expected": "2",
+    "explanation": "In English, 'No' directly confirms the negative fact (did not receive)."
+  },
+  {
+    "id": "pragmatic_04_en_neg_q_affirmative",
+    "category": "Negative Question QA",
+    "language": "en",
+    "state": "Dialog between manager and engineer: \"Didn't the background job fail during midnight?\" Engineer: \"No, it ran completely without any errors.\"",
+    "question_key": "job_status",
+    "instructions": "Did the background job fail?",
+    "criteria": {
+      "1": "Failed",
+      "2": "Succeeded (did not fail)"
+    },
+    "expected": "2",
+    "explanation": "The engineer answers 'No' to the negative question 'Didn't it fail?', meaning it did not fail."
+  },
+  {
+    "id": "pragmatic_05_ja_double_negation",
+    "category": "Double Negation Scope",
+    "language": "ja",
+    "state": "業務委託契約書 第8条:「甲および乙は、相手方の書面による事前の承諾を得ない限り、本契約に基づく権利義務を第三者に譲渡してはならない。ただし、事業譲渡等の組織再編に伴う場合はこの限りではない。」現在、乙は組織再編による事業譲渡を行おうとしている。",
+    "question_key": "assignment_allowed",
+    "instructions": "乙は事前の書面承諾なしに本契約の権利義務を譲渡することが認められますか？",
+    "criteria": {
+      "1": "認められる",
+      "2": "認められない"
+    },
+    "expected": "1",
+    "explanation": "ただし書き『この限りではない』によって、組織再編に伴う事業譲渡の場合は事前承諾義務および譲渡禁止が解除される。"
+  },
+  {
+    "id": "pragmatic_06_ja_multiple_negation_scope",
+    "category": "Double Negation Scope",
+    "language": "ja",
+    "state": "セキュリティポリシー運用細則:「外部委託先がセキュリティ監査基準に不適合であると認定されない限り、アクセス権限の付与を拒絶してはならない。」現在、委託先A社は監査基準に適合していると認定された。",
+    "question_key": "access_permission",
+    "instructions": "A社に対してアクセス権限を付与すべきですか？それとも拒絶すべきですか？",
+    "criteria": {
+      "1": "権限を付与する（拒絶してはならない）",
+      "2": "権限を拒絶する"
+    },
+    "expected": "1",
+    "explanation": "『不適合と認定されない限り、拒絶してはならない』＝適合している場合は拒絶禁止＝付与すべき。"
+  },
+  {
+    "id": "pragmatic_07_en_double_negation",
+    "category": "Double Negation Scope",
+    "language": "en",
+    "state": "Master Services Agreement Clause 4.2: \"The vendor shall not be deemed not to have delivered the services unless a formal written notice of rejection is issued within 5 business days.\" No notice of rejection was issued within 5 business days.",
+    "question_key": "service_delivery",
+    "instructions": "Are the services legally deemed to have been delivered?",
+    "criteria": {
+      "1": "Deemed delivered",
+      "2": "Deemed not delivered"
+    },
+    "expected": "1",
+    "explanation": "'shall not be deemed not to have delivered' is a double negative meaning 'shall be deemed delivered'."
+  },
+  {
+    "id": "pragmatic_08_en_lexical_bias_positive",
+    "category": "Superficial Cue Bias",
+    "language": "en",
+    "state": "HR Announcement: \"All employees are enthusiastically encouraged, strongly supported, warmly welcomed, and celebrated to attend the annual retreat, unless they have ongoing critical incident shifts, in which case attendance is strictly prohibited and forbidden.\" John has an ongoing critical incident shift.",
+    "question_key": "attendance_permitted",
+    "instructions": "Is John permitted to attend the retreat?",
+    "criteria": {
+      "1": "Permitted / Welcomed",
+      "2": "Prohibited / Not permitted"
+    },
+    "expected": "2",
+    "explanation": "Despite strong positive words (encouraged, welcomed, celebrated), the exception condition 'unless' triggers strict prohibition."
+  },
+  {
+    "id": "pragmatic_09_ja_lexical_bias_negative",
+    "category": "Superficial Cue Bias",
+    "language": "ja",
+    "state": "システム仕様書:「本機能は、エラー、例外、クラッシュ、強制終了、データ破壊、接続遮断などのあらゆる致命的障害が発生しないことを検証・保証するための高信頼性フェイルセーフ防御機構である。」",
+    "question_key": "feature_nature",
+    "instructions": "この仕様書が説明している機能の本質は何ですか？",
+    "criteria": {
+      "1": "障害の発生を防止・保証する正常な防御機構",
+      "2": "障害やデータ破壊を引き起こす欠陥・危険な機能"
+    },
+    "expected": "1",
+    "explanation": "『エラー、例外、クラッシュ、破壊』などの否定語が密集しているが、文意はそれらを『発生しないことを保証する防御機構』。"
+  },
+  {
+    "id": "pragmatic_10_ja_presupposition",
+    "category": "Pragmatic Presupposition",
+    "language": "ja",
+    "state": "社員の近況報告:「新規事業部の田中部長は、昨年末に禁煙に成功したことを大変誇らしく思っており、健康診断の結果も大幅に改善しました。」",
+    "question_key": "past_smoking_habit",
+    "instructions": "田中部長は過去にタバコを吸っていたことがありますか？",
+    "criteria": {
+      "1": "吸っていたことがある",
+      "2": "吸っていたことはない（生涯非喫煙者）"
+    },
+    "expected": "1",
+    "explanation": "『禁煙に成功した』という記述は、過去に喫煙していたという事実を言語学的前提（Presupposition）として内包している。"
+  },
+  {
+    "id": "pragmatic_11_en_presupposition",
+    "category": "Pragmatic Presupposition",
+    "language": "en",
+    "state": "Incident Report: \"The DevOps team deeply regrets that they stopped maintaining the legacy database replicas last month, which caused yesterday's synchronization delay.\"",
+    "question_key": "stopped_maintenance",
+    "instructions": "Did the DevOps team stop maintaining the legacy replicas?",
+    "criteria": {
+      "1": "Yes, they stopped maintenance",
+      "2": "No, they never stopped maintenance"
+    },
+    "expected": "1",
+    "explanation": "'regrets that they stopped' presupposes the truth of 'they stopped maintaining'."
+  },
+  {
+    "id": "pragmatic_12_ja_contradiction_detection",
+    "category": "Contradiction Detection",
+    "language": "ja",
+    "state": "申請書類の記述:「申請者・佐藤一郎は生涯独身であり、これまで一度も婚姻歴がありません。なお、同居する妻および実子2名に関する配偶者扶養手当の支給を申請します。」",
+    "question_key": "internal_contradiction",
+    "instructions": "この申請内容には事実関係の論理矛盾が含まれていますか？",
+    "criteria": {
+      "1": "矛盾が含まれている",
+      "2": "矛盾はなく完全に整合している"
+    },
+    "expected": "1",
+    "explanation": "『一度も婚姻歴がない（生涯独身）』と『同居する妻に関する配偶者扶養手当』は論理的に矛盾する。"
+  },
+  {
+    "id": "pragmatic_13_en_contradiction_detection",
+    "category": "Contradiction Detection",
+    "language": "en",
+    "state": "User Biography: \"Marcus was born completely blind from birth and has never possessed any visual perception. Yesterday morning, he enjoyed admiring the vibrant rainbow colors in the morning sky with his own eyes.\"",
+    "question_key": "biography_consistency",
+    "instructions": "Does this biography contain a factual contradiction?",
+    "criteria": {
+      "1": "Contains contradiction",
+      "2": "Completely consistent"
+    },
+    "expected": "1",
+    "explanation": "Being completely blind from birth contradicts admiring vibrant rainbow colors with his own eyes."
+  },
+  {
+    "id": "pragmatic_14_ja_counterfactual",
+    "category": "Counterfactual Logic",
+    "language": "ja",
+    "state": "プロジェクト振り返り:「もしAPIサーバの移行が期日までに完了していなければ、サービス停止ペナルティとして月額利用料の20%が減額される規定でした。しかしエンジニアチームの努力により、予定通り期日内に移行は無事完了しました。」",
+    "question_key": "penalty_incurred",
+    "instructions": "今回のプロジェクトで減額ペナルティは発生しましたか？",
+    "criteria": {
+      "1": "減額ペナルティが発生した",
+      "2": "減額ペナルティは発生しなかった"
+    },
+    "expected": "2",
+    "explanation": "反事実条件（完了していなければ減額）に対し、実際には期日内に完了したため、ペナルティは発生しない。"
+  },
+  {
+    "id": "pragmatic_15_en_counterfactual",
+    "category": "Counterfactual Logic",
+    "language": "en",
+    "state": "Post-Mortem Log: \"Had the failover mechanism activated as designed, customer transactions would not have been lost. Unfortunately, the daemon had been inadvertently stopped prior to the outage.\"",
+    "question_key": "data_loss_occurred",
+    "instructions": "Were customer transactions lost during the outage?",
+    "criteria": {
+      "1": "Transactions were lost",
+      "2": "Transactions were preserved without loss"
+    },
+    "expected": "1",
+    "explanation": "'Had it activated, wouldn't have been lost... Unfortunately stopped' means the condition was not met and transactions were lost."
+  },
+  {
+    "id": "pragmatic_16_ja_except_exception",
+    "category": "Exception Nesting",
+    "language": "ja",
+    "state": "社内規程 第12条:「すべての従業員は、会社の事前承認を得た場合を除き、副業を行ってはならない。ただし、実家の家業である農業に従事する場合については、事前の承認を要しないものとする。」社員の高橋さんは、会社の事前承認を得ずに実家の米農家の手伝い（副業）を行っている。",
+    "question_key": "rule_violation",
+    "instructions": "高橋さんの行為は社内規程に違反していますか？",
+    "criteria": {
+      "1": "違反している",
+      "2": "違反していない（正当・適法）"
+    },
+    "expected": "2",
+    "explanation": "副業禁止の原則に対し、農業はただし書きによって事前承認が免除されているため、違反ではない。"
+  },
+  {
+    "id": "pragmatic_17_en_pragmatic_implicature",
+    "category": "Gricean Implicature",
+    "language": "en",
+    "state": "Academic Recommendation Letter: \"Mr. Evans was impeccably dressed and never missed a morning attendance check during his entire two-year stay in our advanced Deep Learning and Quantum Computing research group.\"",
+    "question_key": "technical_implication",
+    "instructions": "Regarding Mr. Evans's technical and research competence in Deep Learning, what does this letter pragmatically imply?",
+    "criteria": {
+      "1": "Implies poor or negligible technical competence (flouting the Maxim of Quantity: faint praise)",
+      "2": "Implies extraordinary technical and scientific mastery"
+    },
+    "expected": "1",
+    "explanation": "Under Gricean Pragmatics, mentioning only clothing and attendance for a prestigious technical research position implicates a lack of technical merit."
+  },
+  {
+    "id": "pragmatic_18_ja_negative_conjunction",
+    "category": "Superficial Cue Bias",
+    "language": "ja",
+    "state": "ユーザー通知:「次期バージョンへの大型アップデート作業を今夜未明に実施いたしますが、これによるサービスの一時停止や機能の制限は一切伴いません。利用者の皆様は通常通りすべての機能をご利用いただけます。」",
+    "question_key": "service_interruption",
+    "instructions": "今夜未明のアップデート中、利用者はサービスを利用できなくなりますか？",
+    "criteria": {
+      "1": "利用できなくなる（停止する）",
+      "2": "通常通り利用できる（停止しない）"
+    },
+    "expected": "2",
+    "explanation": "『大型アップデート、停止、制限』といった語句があるが、主眼は『一時停止を一切伴わない（通常通り利用可能）』。"
+  },
+  {
+    "id": "pragmatic_19_en_double_negation_scope_logic",
+    "category": "Double Negation Scope",
+    "language": "en",
+    "state": "Commercial Contract Section 11: \"Nothing in this Agreement shall operate to exclude or limit the liability of either party for fraud or fraudulent misrepresentation.\"",
+    "question_key": "fraud_liability_excluded",
+    "instructions": "Can a party legally exclude its liability if it commits fraud under this Agreement?",
+    "criteria": {
+      "1": "Yes, liability can be excluded",
+      "2": "No, liability cannot be excluded"
+    },
+    "expected": "2",
+    "explanation": "'Nothing shall operate to exclude' establishes that fraud liability is never excluded."
+  },
+  {
+    "id": "pragmatic_20_ja_pragmatic_quantifier",
+    "category": "Partial Negation Quantifier",
+    "language": "ja",
+    "state": "アンケート集計結果の解説:「今回の新方針について、社内アンケートでは『全社員が反対したわけではない』という結果が得られました。」",
+    "question_key": "logical_entailment",
+    "instructions": "この集計結果から論理的に確実に導き出せる結論はどちらですか？",
+    "criteria": {
+      "1": "少なくとも一部の社員は反対以外の立場（賛成または中立）をとった",
+      "2": "すべての社員が新方針に賛成した"
+    },
+    "expected": "1",
+    "explanation": "『全員が〜わけではない』は部分否定であり、全員ではない＝少なくとも1人以上は反対しなかった（賛成または中立）ことを意味する。"
+  }
+]

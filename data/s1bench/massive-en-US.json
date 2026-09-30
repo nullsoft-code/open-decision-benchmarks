@@ -1,0 +1,2831 @@
+{
+  "name": "massive-en-US",
+  "question": {
+    "type": "choice",
+    "instructions": "Which assistant domain should handle this utterance? Judge from the request itself, not from how it is phrased.",
+    "criteria": {
+      "alarm": "Setting, changing, or querying alarms.",
+      "audio": "Volume, mute, or audio output settings.",
+      "calendar": "Events, meetings, reminders on a calendar.",
+      "cooking": "Recipes and cooking instructions.",
+      "datetime": "The current time, date, or time conversions.",
+      "email": "Reading, sending, or checking email and contacts.",
+      "general": "Small talk, jokes, greetings, or general assistant control such as repeat or confirm.",
+      "iot": "Controlling lights, plugs, heating, cleaners, coffee machines, or wemo devices.",
+      "lists": "Creating, querying, or removing list items.",
+      "music": "Music preferences, likes, or music settings, not playing a specific item.",
+      "news": "News headlines or updates.",
+      "play": "Playing a specific song, podcast, radio, audiobook, or game.",
+      "qa": "Factual questions, definitions, math, currency, stock prices.",
+      "recommendation": "Suggestions for events, movies, or locations.",
+      "social": "Social media posts or queries.",
+      "takeaway": "Food orders and delivery status.",
+      "transport": "Taxis, tickets, traffic, or travel directions.",
+      "weather": "Weather forecasts or conditions."
+    }
+  },
+  "question_type": "choice",
+  "total_items": 350,
+  "items": [
+    {
+      "id": "massive-10213",
+      "state": {
+        "utterance": "list of famous biryani recipes",
+        "locale": "en-US"
+      },
+      "truth": "cooking"
+    },
+    {
+      "id": "massive-10214",
+      "state": {
+        "utterance": "recipes that can be cooked in an hour",
+        "locale": "en-US"
+      },
+      "truth": "cooking"
+    },
+    {
+      "id": "massive-10217",
+      "state": {
+        "utterance": "find the recipe for sambar in cookingforu application",
+        "locale": "en-US"
+      },
+      "truth": "cooking"
+    },
+    {
+      "id": "massive-10256",
+      "state": {
+        "utterance": "launch super mario",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10292",
+      "state": {
+        "utterance": "play game with me",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-1030",
+      "state": {
+        "utterance": "dim the lights in the living room",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-10317",
+      "state": {
+        "utterance": "play me in tic tac toe",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10321",
+      "state": {
+        "utterance": "i want to play fifa seventeen",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10339",
+      "state": {
+        "utterance": "please open chess game i would like to play with you",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10355",
+      "state": {
+        "utterance": "play chess",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10365",
+      "state": {
+        "utterance": "play a game of contra as a second player",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10366",
+      "state": {
+        "utterance": "we should play nfs at high speed",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10399",
+      "state": {
+        "utterance": "please open and play chess with me",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-10426",
+      "state": {
+        "utterance": "what else is missing in the diary",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10472",
+      "state": {
+        "utterance": "help me start my kitchen list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10512",
+      "state": {
+        "utterance": "list everything left on my query",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10513",
+      "state": {
+        "utterance": "i want to make this week's shopping list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10645",
+      "state": {
+        "utterance": "add red wine to my shopping list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10696",
+      "state": {
+        "utterance": "replace",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10772",
+      "state": {
+        "utterance": "remove my dentist's appointment from today's schedule",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-10804",
+      "state": {
+        "utterance": "read my grocery list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10848",
+      "state": {
+        "utterance": "remove this list from the others",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10851",
+      "state": {
+        "utterance": "what are my available lists",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10893",
+      "state": {
+        "utterance": "make a grocery list please",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10898",
+      "state": {
+        "utterance": "please add list of things to buy for party",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10940",
+      "state": {
+        "utterance": "make a new shopping list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-10956",
+      "state": {
+        "utterance": "what groups are listed in my contacts",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-1098",
+      "state": {
+        "utterance": "what day of the week does the fifteenth of march fall on",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-10996",
+      "state": {
+        "utterance": "add bob to my list of contacts",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-11023",
+      "state": {
+        "utterance": "remove shopping list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-11029",
+      "state": {
+        "utterance": "add to list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-11140",
+      "state": {
+        "utterance": "set list",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-1120",
+      "state": {
+        "utterance": "is there any special in politic",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-11204",
+      "state": {
+        "utterance": "important house information",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-11250",
+      "state": {
+        "utterance": "read back my grocery list to me",
+        "locale": "en-US"
+      },
+      "truth": "lists"
+    },
+    {
+      "id": "massive-11259",
+      "state": {
+        "utterance": "jump to next podcast",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11306",
+      "state": {
+        "utterance": "play that podcast i was listening to yesterday",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11335",
+      "state": {
+        "utterance": "play and shuffle all slow music songs",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11349",
+      "state": {
+        "utterance": "olly start the podcast over that i started last night",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11418",
+      "state": {
+        "utterance": "play duncan trussel's latest podcast",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11467",
+      "state": {
+        "utterance": "play the most recent podcast for this american life",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11474",
+      "state": {
+        "utterance": "resume series podcast",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11476",
+      "state": {
+        "utterance": "play the previous podcast",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11515",
+      "state": {
+        "utterance": "lets hear the united states of anxiety podcast",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11525",
+      "state": {
+        "utterance": "i want to see the next podcast available",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11536",
+      "state": {
+        "utterance": "add podcast favorites to playlist and start",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-11563",
+      "state": {
+        "utterance": "what can i do in berlin",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11570",
+      "state": {
+        "utterance": "what's happening around my town",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11665",
+      "state": {
+        "utterance": "olly i'm looking for some dress shows can you find clothing stores within one mile",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11733",
+      "state": {
+        "utterance": "how is the new movie swat",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11798",
+      "state": {
+        "utterance": "what's the next event at the library",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11860",
+      "state": {
+        "utterance": "tell me the local events",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11871",
+      "state": {
+        "utterance": "recommend a movie playing in my area",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-11904",
+      "state": {
+        "utterance": "what's going on around here this weekend",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-1191",
+      "state": {
+        "utterance": "if it's sunrise in stockholm what time is it in okinawa",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-11947",
+      "state": {
+        "utterance": "what are some restaurants near me",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-12019",
+      "state": {
+        "utterance": "find gluten free bakery near me",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-12066",
+      "state": {
+        "utterance": "what shops are near me",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-12073",
+      "state": {
+        "utterance": "refer local current events",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-12098",
+      "state": {
+        "utterance": "show me nearby musical events",
+        "locale": "en-US"
+      },
+      "truth": "recommendation"
+    },
+    {
+      "id": "massive-12182",
+      "state": {
+        "utterance": "what are the traffic conditions on the one hundred and one",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12189",
+      "state": {
+        "utterance": "how do i get to the train station for a ticket",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12263",
+      "state": {
+        "utterance": "california",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12367",
+      "state": {
+        "utterance": "what's the best way to sheffield",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-124",
+      "state": {
+        "utterance": "olly tell me a joke",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-1256",
+      "state": {
+        "utterance": "what's the funniest joke you know",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-12675",
+      "state": {
+        "utterance": "is traffic light",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12685",
+      "state": {
+        "utterance": "what is the traffic like right now",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12722",
+      "state": {
+        "utterance": "order a train ticket to boston",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12797",
+      "state": {
+        "utterance": "train times from near me to location",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12802",
+      "state": {
+        "utterance": "book a ticket to ny by train",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12851",
+      "state": {
+        "utterance": "show me direction to my home",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-12908",
+      "state": {
+        "utterance": "what time does the train arrive in sacremento",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-13044",
+      "state": {
+        "utterance": "i want tickets to the sold out concert on saturday night",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-13102",
+      "state": {
+        "utterance": "how much is one plus one",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13122",
+      "state": {
+        "utterance": "what is the factorial of ten",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13140",
+      "state": {
+        "utterance": "tell me all about hurricane",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13188",
+      "state": {
+        "utterance": "tell me how are the results of assembly elections in delhi going to come out",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-13221",
+      "state": {
+        "utterance": "what does priyanka chopra do to look beautiful",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-13310",
+      "state": {
+        "utterance": "what's two plus two",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13359",
+      "state": {
+        "utterance": "what is twelve plus one hundred and ninety six",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13361",
+      "state": {
+        "utterance": "what is the definition of timeliness",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13400",
+      "state": {
+        "utterance": "send a funny message to all of my friends",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-13457",
+      "state": {
+        "utterance": "tell me when i should leave for a scheduled event so that i am on time",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-13506",
+      "state": {
+        "utterance": "can you tell me the time it is",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-13521",
+      "state": {
+        "utterance": "why is the earth round",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-13547",
+      "state": {
+        "utterance": "where was will ferrell seen last night",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-13580",
+      "state": {
+        "utterance": "how tall is mount everest",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-1360",
+      "state": {
+        "utterance": "please raise the light i am not comfortable at this",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-13683",
+      "state": {
+        "utterance": "what brand hair spray does donald trump use",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13693",
+      "state": {
+        "utterance": "where is the prime meridian",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13774",
+      "state": {
+        "utterance": "how far is california from georgia",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13900",
+      "state": {
+        "utterance": "the definition of life",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-13966",
+      "state": {
+        "utterance": "what is the yen worth",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14",
+      "state": {
+        "utterance": "and the darkness has fallen",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-14001",
+      "state": {
+        "utterance": "tell me everything you know about sloths",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14011",
+      "state": {
+        "utterance": "what is dolly parton's birthday",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14029",
+      "state": {
+        "utterance": "what is the us dollar and euro exchange rate",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14074",
+      "state": {
+        "utterance": "one dolla equals how much inr",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14150",
+      "state": {
+        "utterance": "what are converse shoes",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14169",
+      "state": {
+        "utterance": "where did amal clooney go to college",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14190",
+      "state": {
+        "utterance": "how much is starbuck's stock these days",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14214",
+      "state": {
+        "utterance": "find the ways of travel for the same",
+        "locale": "en-US"
+      },
+      "truth": "transport"
+    },
+    {
+      "id": "massive-14323",
+      "state": {
+        "utterance": "what color is a dragon fruit",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14406",
+      "state": {
+        "utterance": "give the stock price details of motorolla",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14417",
+      "state": {
+        "utterance": "which ocean touches at our continent",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14553",
+      "state": {
+        "utterance": "tell me if global warming is true",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-14592",
+      "state": {
+        "utterance": "give me the description of a smartphone circuit",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14599",
+      "state": {
+        "utterance": "currency exchange",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14661",
+      "state": {
+        "utterance": "what is the birth year of barack obama",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14673",
+      "state": {
+        "utterance": "can you tell me about animal kingdom in amazon forest",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-14701",
+      "state": {
+        "utterance": "describe the heart stone card game",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14705",
+      "state": {
+        "utterance": "ok google where does sophia vergara live",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-14958",
+      "state": {
+        "utterance": "look up",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-15010",
+      "state": {
+        "utterance": "how much is one american dollars worth in england",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-15055",
+      "state": {
+        "utterance": "which pole is colder south or north",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-15056",
+      "state": {
+        "utterance": "how old is emma watson newest boyfriend",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-15200",
+      "state": {
+        "utterance": "get me latest updates from facebook",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-15305",
+      "state": {
+        "utterance": "do i have any notifications from social media",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-1542",
+      "state": {
+        "utterance": "the sun is shinning bright will we have this weather for the rest of the day",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-1547",
+      "state": {
+        "utterance": "what's the weather for my location this week",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-15548",
+      "state": {
+        "utterance": "tweet mobile complaint to samsung",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-15557",
+      "state": {
+        "utterance": "i need you to tweet a complaint",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-15626",
+      "state": {
+        "utterance": "please tweet a complaint to comcast for bad customer service",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-15723",
+      "state": {
+        "utterance": "set feeling happy status on facebook",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-15732",
+      "state": {
+        "utterance": "tweet samsung and tell them to stop killing people with their products",
+        "locale": "en-US"
+      },
+      "truth": "social"
+    },
+    {
+      "id": "massive-15802",
+      "state": {
+        "utterance": "reply an email to jason that i will not come tonight",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-15815",
+      "state": {
+        "utterance": "what is a work phone number of emilia",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-1589",
+      "state": {
+        "utterance": "is it going to be sunny next tuesday",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-15904",
+      "state": {
+        "utterance": "check my new emails and tell me what are they about",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-15933",
+      "state": {
+        "utterance": "what new emails do i have",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-15971",
+      "state": {
+        "utterance": "what was the last email from work",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16032",
+      "state": {
+        "utterance": "please send an email to sally regarding tomorrows meeting",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16361",
+      "state": {
+        "utterance": "do i have any new emails in the last hour",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16446",
+      "state": {
+        "utterance": "please check for recent emailstudy from this sender",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16560",
+      "state": {
+        "utterance": "respond to my bosses email with the word that i will be in at four in the evening",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16563",
+      "state": {
+        "utterance": "olly check my email",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16589",
+      "state": {
+        "utterance": "who is the contact that last called me",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16603",
+      "state": {
+        "utterance": "what does the email say that was sent thirty minutes ago from mom",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16605",
+      "state": {
+        "utterance": "write and send email to my boss",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16630",
+      "state": {
+        "utterance": "send a reply to the last email",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16642",
+      "state": {
+        "utterance": "check mail for anything from shelly",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16652",
+      "state": {
+        "utterance": "did ben's email have an attachment",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16662",
+      "state": {
+        "utterance": "did i receive any new emails from dan",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-1671",
+      "state": {
+        "utterance": "play only all music released between the year one thousand nine hundred and ninety and two thousand",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-16838",
+      "state": {
+        "utterance": "can you send the email to the new email id",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16873",
+      "state": {
+        "utterance": "email naty for her birthday",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-16880",
+      "state": {
+        "utterance": "email jerry regarding the meeting",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-17005",
+      "state": {
+        "utterance": "please check for new email",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-17052",
+      "state": {
+        "utterance": "search nandy",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-17087",
+      "state": {
+        "utterance": "check for me new emails received from sara",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-17098",
+      "state": {
+        "utterance": "show me any emails received in the last hour",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-17111",
+      "state": {
+        "utterance": "contact detail of paul",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-1715",
+      "state": {
+        "utterance": "lower volume by fifty percent",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-17170",
+      "state": {
+        "utterance": "notify me when joshua emails me",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-17179",
+      "state": {
+        "utterance": "has john sent me an email",
+        "locale": "en-US"
+      },
+      "truth": "email"
+    },
+    {
+      "id": "massive-1745",
+      "state": {
+        "utterance": "you like the song",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-1759",
+      "state": {
+        "utterance": "give me news on president trump",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-1778",
+      "state": {
+        "utterance": "please dim the lights",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-1786",
+      "state": {
+        "utterance": "switch off the master's bedroom",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-1831",
+      "state": {
+        "utterance": "order one pizza from pizza hut",
+        "locale": "en-US"
+      },
+      "truth": "takeaway"
+    },
+    {
+      "id": "massive-189",
+      "state": {
+        "utterance": "mute volume",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-1982",
+      "state": {
+        "utterance": "set alarm at six thirty am",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-2057",
+      "state": {
+        "utterance": "put that song in my favorite list",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-2093",
+      "state": {
+        "utterance": "bring me the title of current music",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-2160",
+      "state": {
+        "utterance": "i'm going to sleep now",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-2167",
+      "state": {
+        "utterance": "get me up in half an hour",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-2271",
+      "state": {
+        "utterance": "please play songs i've purchased and favorited",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-2298",
+      "state": {
+        "utterance": "put the lights off now",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-2354",
+      "state": {
+        "utterance": "which type of music it is",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-2432",
+      "state": {
+        "utterance": "how is my order",
+        "locale": "en-US"
+      },
+      "truth": "takeaway"
+    },
+    {
+      "id": "massive-2451",
+      "state": {
+        "utterance": "seven hundred",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-2472",
+      "state": {
+        "utterance": "is the time currently correct for where i am located",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-2480",
+      "state": {
+        "utterance": "call for take-out",
+        "locale": "en-US"
+      },
+      "truth": "takeaway"
+    },
+    {
+      "id": "massive-2496",
+      "state": {
+        "utterance": "daily news",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-2497",
+      "state": {
+        "utterance": "today is what date",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-2498",
+      "state": {
+        "utterance": "siri today is what date",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-258",
+      "state": {
+        "utterance": "i can't hear you",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-2591",
+      "state": {
+        "utterance": "turn up the brightness",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-261",
+      "state": {
+        "utterance": "i can barely hear you",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-2611",
+      "state": {
+        "utterance": "current weather forecast",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-2690",
+      "state": {
+        "utterance": "turn off the socket",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-2733",
+      "state": {
+        "utterance": "start a pot of coffee please",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-279",
+      "state": {
+        "utterance": "what is today's forecast for berlin",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-2812",
+      "state": {
+        "utterance": "can you make me a cup of coffee",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-2816",
+      "state": {
+        "utterance": "set the living room lights to fifty percent",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-2975",
+      "state": {
+        "utterance": "please change the light colors to red",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-2985",
+      "state": {
+        "utterance": "cancel alarm",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-299",
+      "state": {
+        "utterance": "what is the weather",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-2995",
+      "state": {
+        "utterance": "please tell me news related to the stock market",
+        "locale": "en-US"
+      },
+      "truth": "qa"
+    },
+    {
+      "id": "massive-3002",
+      "state": {
+        "utterance": "play songs by the band the beatles",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-3008",
+      "state": {
+        "utterance": "can you raise the lights for me please",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-3034",
+      "state": {
+        "utterance": "tell me the temperature",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-3077",
+      "state": {
+        "utterance": "shut off the socket",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-3099",
+      "state": {
+        "utterance": "show me some current events",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-3124",
+      "state": {
+        "utterance": "play me a random song from my playlist",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-319",
+      "state": {
+        "utterance": "tell me the weather in barcelona in two days from now",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-3204",
+      "state": {
+        "utterance": "please note i like jazz and hate disco",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-3406",
+      "state": {
+        "utterance": "what is the ten day forecast",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-3434",
+      "state": {
+        "utterance": "best rap music",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-3441",
+      "state": {
+        "utterance": "is the twenty second on a wednesday",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-348",
+      "state": {
+        "utterance": "will it rain tomorrow",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-3546",
+      "state": {
+        "utterance": "i would like to hear jazz music",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-3576",
+      "state": {
+        "utterance": "what is the latest story from fox news",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-3595",
+      "state": {
+        "utterance": "brighter",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-3686",
+      "state": {
+        "utterance": "turn on the playlist i have dedicated to rock music",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-3725",
+      "state": {
+        "utterance": "today is which date",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-3741",
+      "state": {
+        "utterance": "what song is playing right now",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-3762",
+      "state": {
+        "utterance": "raise the lights",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-3912",
+      "state": {
+        "utterance": "i'd like to listen to hear a music of dance and country",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-3982",
+      "state": {
+        "utterance": "please select the first song in my itunes library",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-4077",
+      "state": {
+        "utterance": "turn the kitchen lights off",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-4090",
+      "state": {
+        "utterance": "turn up the volume on my speakers",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-411",
+      "state": {
+        "utterance": "can you tell me a joke",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-4136",
+      "state": {
+        "utterance": "can you please play imogen heap",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-4174",
+      "state": {
+        "utterance": "hey olly chance the current light settings",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-4178",
+      "state": {
+        "utterance": "is there any news about the presidency",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-4187",
+      "state": {
+        "utterance": "hey siri what's the time",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-4212",
+      "state": {
+        "utterance": "am i going to be able to mow the grass this evening",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-4268",
+      "state": {
+        "utterance": "move to the next song in the list",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-4361",
+      "state": {
+        "utterance": "give me some good sounds",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-442",
+      "state": {
+        "utterance": "what's happening in the news",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-4482",
+      "state": {
+        "utterance": "will i need to shovel my driveway this morning",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-4491",
+      "state": {
+        "utterance": "what is the latest news on donald trump",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-4580",
+      "state": {
+        "utterance": "what is the time in chicago",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-46",
+      "state": {
+        "utterance": "what's up olly",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-4618",
+      "state": {
+        "utterance": "enable smart socket",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-4638",
+      "state": {
+        "utterance": "change volume settings in the negative alexa",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-4772",
+      "state": {
+        "utterance": "tell me the time in this time zone",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-4826",
+      "state": {
+        "utterance": "make the lights pink",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-4851",
+      "state": {
+        "utterance": "is my alarm set",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-4896",
+      "state": {
+        "utterance": "lower the overhead lights",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-4909",
+      "state": {
+        "utterance": "play songs by barenaked ladies",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-4913",
+      "state": {
+        "utterance": "are you aware this joke",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-4960",
+      "state": {
+        "utterance": "music third day",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-4994",
+      "state": {
+        "utterance": "please mute my speaker",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-5009",
+      "state": {
+        "utterance": "will i need an umbrella this week",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-5152",
+      "state": {
+        "utterance": "please skip two songs",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-5176",
+      "state": {
+        "utterance": "what kind of weather should i expect this week",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-5196",
+      "state": {
+        "utterance": "i want to know about the brexit",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-5199",
+      "state": {
+        "utterance": "add my opinion to this song great",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-5229",
+      "state": {
+        "utterance": "i like music",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-5245",
+      "state": {
+        "utterance": "set environmental news notification",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-5328",
+      "state": {
+        "utterance": "rock",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-5330",
+      "state": {
+        "utterance": "put on the vacuum on now and clean the living room",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-5339",
+      "state": {
+        "utterance": "low cooling condition",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-5370",
+      "state": {
+        "utterance": "what's the latest trump controversy",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-5439",
+      "state": {
+        "utterance": "do i need umbrella for night",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-5570",
+      "state": {
+        "utterance": "find food and order",
+        "locale": "en-US"
+      },
+      "truth": "takeaway"
+    },
+    {
+      "id": "massive-560",
+      "state": {
+        "utterance": "turn off eight am alarm",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-5611",
+      "state": {
+        "utterance": "reduce volume",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-5727",
+      "state": {
+        "utterance": "brighten the light of hall",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-5823",
+      "state": {
+        "utterance": "decrease twenty percent",
+        "locale": "en-US"
+      },
+      "truth": "audio"
+    },
+    {
+      "id": "massive-5917",
+      "state": {
+        "utterance": "make a coffee please",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-5974",
+      "state": {
+        "utterance": "did i set an alarm to have tablets in the noon",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-5985",
+      "state": {
+        "utterance": "show me the latest news from the un",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-6014",
+      "state": {
+        "utterance": "what artist is this",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-6055",
+      "state": {
+        "utterance": "did i leave the light on in the garage",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-614",
+      "state": {
+        "utterance": "start playlist",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-6178",
+      "state": {
+        "utterance": "should i wear a jacket",
+        "locale": "en-US"
+      },
+      "truth": "weather"
+    },
+    {
+      "id": "massive-6268",
+      "state": {
+        "utterance": "if you had to kill someone to save three people would you do it and if so why",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6288",
+      "state": {
+        "utterance": "i had food as soon as i got up",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-63",
+      "state": {
+        "utterance": "tell me about my alarms",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-6313",
+      "state": {
+        "utterance": "today i saw a bulldog",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6382",
+      "state": {
+        "utterance": "hey what has been happening interesting in sports lately",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6405",
+      "state": {
+        "utterance": "what sound does a dog make",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6433",
+      "state": {
+        "utterance": "please know that today i had a meeting with george",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6578",
+      "state": {
+        "utterance": "love",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6621",
+      "state": {
+        "utterance": "latest movies in theaters",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-6713",
+      "state": {
+        "utterance": "cancel business meeting on wednesday",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6722",
+      "state": {
+        "utterance": "is there anything i should be reminded about",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6729",
+      "state": {
+        "utterance": "cancel the breakfast at tiffany's house",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6744",
+      "state": {
+        "utterance": "put meeting with pawel for tomorrow ten am",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6764",
+      "state": {
+        "utterance": "remind me to wash the windows",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6798",
+      "state": {
+        "utterance": "remove my next event",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6806",
+      "state": {
+        "utterance": "show me my calendar event this friday afternoon",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6909",
+      "state": {
+        "utterance": "what is happening after one and before three p. m.",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-6980",
+      "state": {
+        "utterance": "give me to do list",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7013",
+      "state": {
+        "utterance": "when is the event going to start",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7044",
+      "state": {
+        "utterance": "remind me to start getting ready by five p. m. please",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7055",
+      "state": {
+        "utterance": "schedule a meeting with matt at eleven am on thursday",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7199",
+      "state": {
+        "utterance": "set a notification for three two and one hours before next week's english final",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7294",
+      "state": {
+        "utterance": "remove the appointment with george adams from my calendar",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-730",
+      "state": {
+        "utterance": "turn the lights off",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-7463",
+      "state": {
+        "utterance": "inform my group that the new meeting date is tomorrow",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7503",
+      "state": {
+        "utterance": "where in d. c. is that meeting at one p. m. on friday",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7528",
+      "state": {
+        "utterance": "thirteenth june is a day of election result please set it",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7531",
+      "state": {
+        "utterance": "please add my pay days",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7542",
+      "state": {
+        "utterance": "please remind me about this tomorrow",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7556",
+      "state": {
+        "utterance": "set my calendar to remind me to buy groceries every friday",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7565",
+      "state": {
+        "utterance": "meeting reminder",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7598",
+      "state": {
+        "utterance": "please set a meeting to discuss terrorism with fred on the next available meeting day",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-765",
+      "state": {
+        "utterance": "could you please give me up to date news headlines from my newest provider",
+        "locale": "en-US"
+      },
+      "truth": "news"
+    },
+    {
+      "id": "massive-7697",
+      "state": {
+        "utterance": "set a reminder for this",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7751",
+      "state": {
+        "utterance": "remind me every monday to take out the trash",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-781",
+      "state": {
+        "utterance": "play bilando",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-7844",
+      "state": {
+        "utterance": "what reminders did i set",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7863",
+      "state": {
+        "utterance": "remind me to start supper this afternoon at five",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7870",
+      "state": {
+        "utterance": "delete event from calendar",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7908",
+      "state": {
+        "utterance": "do i need to do anything today",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7919",
+      "state": {
+        "utterance": "new meeting add bill and malinda as attendees",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7946",
+      "state": {
+        "utterance": "what are the upcoming concerts in dallas",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7978",
+      "state": {
+        "utterance": "what reminders do i have scheduled before noon tomorrow",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-7981",
+      "state": {
+        "utterance": "send an alert before meeting",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8",
+      "state": {
+        "utterance": "pink is all we need",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-8001",
+      "state": {
+        "utterance": "can you erase the haircut i have scheduled for friday",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8125",
+      "state": {
+        "utterance": "create a meeting event in my calendar",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8129",
+      "state": {
+        "utterance": "what reminders do i still have",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8140",
+      "state": {
+        "utterance": "set a reminder for the thirteenth that i have a lunch with dale",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8148",
+      "state": {
+        "utterance": "did i leave myself any reminders",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-827",
+      "state": {
+        "utterance": "play bob dylan playlist",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-8294",
+      "state": {
+        "utterance": "add to calendar and repeat",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8320",
+      "state": {
+        "utterance": "i need to know more about the parade this weekend",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-8336",
+      "state": {
+        "utterance": "when is my brunch with jennifer",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8358",
+      "state": {
+        "utterance": "remind me about this",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8388",
+      "state": {
+        "utterance": "i want to do laundry at eight p. m. create reminder",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8402",
+      "state": {
+        "utterance": "tell me more about my events",
+        "locale": "en-US"
+      },
+      "truth": "general"
+    },
+    {
+      "id": "massive-8431",
+      "state": {
+        "utterance": "get rid of all my scheduled events",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8516",
+      "state": {
+        "utterance": "delete calendar item",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8525",
+      "state": {
+        "utterance": "meeting reminders from three to five",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8539",
+      "state": {
+        "utterance": "remind me about",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8579",
+      "state": {
+        "utterance": "what information should i know for my meetings today",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-86",
+      "state": {
+        "utterance": "what date is it today",
+        "locale": "en-US"
+      },
+      "truth": "datetime"
+    },
+    {
+      "id": "massive-861",
+      "state": {
+        "utterance": "my set alarms",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-8635",
+      "state": {
+        "utterance": "can you remind me to order the turkey three weeks before thanksgiving",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8679",
+      "state": {
+        "utterance": "is today saint patricks day",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-870",
+      "state": {
+        "utterance": "opinion save",
+        "locale": "en-US"
+      },
+      "truth": "music"
+    },
+    {
+      "id": "massive-8782",
+      "state": {
+        "utterance": "do i have a meeting this afternoon",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8904",
+      "state": {
+        "utterance": "information of recent events",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-8907",
+      "state": {
+        "utterance": "mention event in calendar with others",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-9053",
+      "state": {
+        "utterance": "set a meeting event reminder with mona on tuesday",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-9074",
+      "state": {
+        "utterance": "please remove that event",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-9112",
+      "state": {
+        "utterance": "do add this on my calendar",
+        "locale": "en-US"
+      },
+      "truth": "calendar"
+    },
+    {
+      "id": "massive-920",
+      "state": {
+        "utterance": "please remove my alarm",
+        "locale": "en-US"
+      },
+      "truth": "alarm"
+    },
+    {
+      "id": "massive-9303",
+      "state": {
+        "utterance": "play the oldies station",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9327",
+      "state": {
+        "utterance": "please scan the am dial on the radio right now",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9358",
+      "state": {
+        "utterance": "start radio channel eight hundred and eighty nine",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9561",
+      "state": {
+        "utterance": "play station gx in the radio",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9617",
+      "state": {
+        "utterance": "play me this mornings show from one hundred and one point nine",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-962",
+      "state": {
+        "utterance": "increase the brightness of the lights",
+        "locale": "en-US"
+      },
+      "truth": "iot"
+    },
+    {
+      "id": "massive-9637",
+      "state": {
+        "utterance": "start my playlist on i heart radio",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-967",
+      "state": {
+        "utterance": "can i get take-out from pf changs",
+        "locale": "en-US"
+      },
+      "truth": "takeaway"
+    },
+    {
+      "id": "massive-9680",
+      "state": {
+        "utterance": "resume harry potter from the place i have stopped listening to last time",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9691",
+      "state": {
+        "utterance": "open audio book history of rome",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9844",
+      "state": {
+        "utterance": "continue the last chapter of the audio book i was listening to",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9853",
+      "state": {
+        "utterance": "alexa start from my last session of joes book",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9875",
+      "state": {
+        "utterance": "read some more of the daisy goodwin book for me",
+        "locale": "en-US"
+      },
+      "truth": "play"
+    },
+    {
+      "id": "massive-9912",
+      "state": {
+        "utterance": "olly how long should i boil the eggs",
+        "locale": "en-US"
+      },
+      "truth": "cooking"
+    },
+    {
+      "id": "massive-9931",
+      "state": {
+        "utterance": "olly how long should i boil the egg",
+        "locale": "en-US"
+      },
+      "truth": "cooking"
+    },
+    {
+      "id": "massive-9986",
+      "state": {
+        "utterance": "boiling",
+        "locale": "en-US"
+      },
+      "truth": "cooking"
+    }
+  ]
+}

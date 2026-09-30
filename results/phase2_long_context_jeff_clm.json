@@ -1,0 +1,260 @@
+{
+  "Jeff-0.8B": {
+    "correct": 15,
+    "total": 15,
+    "accuracy": 1.0,
+    "mean_latency": 0.5579600933318337,
+    "total_time": 8.369401399977505,
+    "items": [
+      {
+        "id": "doc1-q01-oral-notice",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.9274512999691069
+      },
+      {
+        "id": "doc1-q02-prior-possession",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.5465662000351585
+      },
+      {
+        "id": "doc1-q03-law-disclosure",
+        "pred": true,
+        "ground_truth": true,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.5653058000025339
+      },
+      {
+        "id": "doc1-q04-lost-profits",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.5575043000280857
+      },
+      {
+        "id": "doc1-q05-survival-years",
+        "pred": "3_YEARS",
+        "ground_truth": "3_YEARS",
+        "correct": true,
+        "confidence": 0.9749580693724871,
+        "latency": 0.5936129000037909
+      },
+      {
+        "id": "doc1-q06-jurisdiction",
+        "pred": "TOKYO_DISTRICT",
+        "ground_truth": "TOKYO_DISTRICT",
+        "correct": true,
+        "confidence": 0.9979986741502861,
+        "latency": 0.548187299980782
+      },
+      {
+        "id": "doc1-q07-max-liability",
+        "pred": "LOWER_OF_10M_OR_1YEAR",
+        "ground_truth": "LOWER_OF_10M_OR_1YEAR",
+        "correct": true,
+        "confidence": 0.9933702285055248,
+        "latency": 0.784786999982316
+      },
+      {
+        "id": "doc1-q08-disposal-cert",
+        "pred": true,
+        "ground_truth": true,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.5135156000033021
+      },
+      {
+        "id": "doc2-q09-frontend-scope",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.4630361999734305
+      },
+      {
+        "id": "doc2-q10-test-coverage",
+        "pred": "COV_85",
+        "ground_truth": "COV_85",
+        "correct": true,
+        "confidence": 0.9975630661679632,
+        "latency": 0.4729225999908522
+      },
+      {
+        "id": "doc2-q11-subcontract",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.4778091000043787
+      },
+      {
+        "id": "doc2-q12-ip-transfer",
+        "pred": "UPON_FULL_PAYMENT",
+        "ground_truth": "UPON_FULL_PAYMENT",
+        "correct": true,
+        "confidence": 0.2874775422733656,
+        "latency": 0.4755972999846563
+      },
+      {
+        "id": "doc2-q13-local-data",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.0,
+        "latency": 0.4699430000036955
+      },
+      {
+        "id": "doc2-q14-deemed-acceptance",
+        "pred": "DAYS_10",
+        "ground_truth": "DAYS_10",
+        "correct": true,
+        "confidence": 0.7028046014481861,
+        "latency": 0.480083399976138
+      },
+      {
+        "id": "doc2-q15-transfer-fee",
+        "pred": "BUYER_KOU",
+        "ground_truth": "BUYER_KOU",
+        "correct": true,
+        "confidence": 0.8884770495459361,
+        "latency": 0.49307940003927797
+      }
+    ]
+  },
+  "CLM-8B": {
+    "correct": 3,
+    "total": 15,
+    "accuracy": 0.2,
+    "mean_latency": 10.780864200003755,
+    "total_time": 161.71296300005633,
+    "items": [
+      {
+        "id": "doc1-q01-oral-notice",
+        "pred": true,
+        "ground_truth": false,
+        "correct": false,
+        "confidence": 0.7659799456596375,
+        "latency": 12.513662299956195
+      },
+      {
+        "id": "doc1-q02-prior-possession",
+        "pred": true,
+        "ground_truth": false,
+        "correct": false,
+        "confidence": 0.8869885206222534,
+        "latency": 11.670581899990793
+      },
+      {
+        "id": "doc1-q03-law-disclosure",
+        "pred": false,
+        "ground_truth": true,
+        "correct": false,
+        "confidence": 0.7202879190444946,
+        "latency": 12.540371300012339
+      },
+      {
+        "id": "doc1-q04-lost-profits",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.5023951530456543,
+        "latency": 12.815738700039219
+      },
+      {
+        "id": "doc1-q05-survival-years",
+        "pred": false,
+        "ground_truth": "3_YEARS",
+        "correct": false,
+        "confidence": 0.3803468644618988,
+        "latency": 11.760802700009663
+      },
+      {
+        "id": "doc1-q06-jurisdiction",
+        "pred": false,
+        "ground_truth": "TOKYO_DISTRICT",
+        "correct": false,
+        "confidence": 0.4538005292415619,
+        "latency": 11.892599200014956
+      },
+      {
+        "id": "doc1-q07-max-liability",
+        "pred": false,
+        "ground_truth": "LOWER_OF_10M_OR_1YEAR",
+        "correct": false,
+        "confidence": 0.9574873447418213,
+        "latency": 11.848965300014243
+      },
+      {
+        "id": "doc1-q08-disposal-cert",
+        "pred": true,
+        "ground_truth": true,
+        "correct": true,
+        "confidence": 0.9304377436637878,
+        "latency": 12.356051899958402
+      },
+      {
+        "id": "doc2-q09-frontend-scope",
+        "pred": true,
+        "ground_truth": false,
+        "correct": false,
+        "confidence": 0.9928486347198486,
+        "latency": 8.120112199976575
+      },
+      {
+        "id": "doc2-q10-test-coverage",
+        "pred": false,
+        "ground_truth": "COV_85",
+        "correct": false,
+        "confidence": 0.6386401057243347,
+        "latency": 8.865400000009686
+      },
+      {
+        "id": "doc2-q11-subcontract",
+        "pred": false,
+        "ground_truth": false,
+        "correct": true,
+        "confidence": 0.8062469959259033,
+        "latency": 10.66170440003043
+      },
+      {
+        "id": "doc2-q12-ip-transfer",
+        "pred": false,
+        "ground_truth": "UPON_FULL_PAYMENT",
+        "correct": false,
+        "confidence": 0.9568130970001221,
+        "latency": 8.439196599996649
+      },
+      {
+        "id": "doc2-q13-local-data",
+        "pred": true,
+        "ground_truth": false,
+        "correct": false,
+        "confidence": 0.9232951998710632,
+        "latency": 10.923342099995352
+      },
+      {
+        "id": "doc2-q14-deemed-acceptance",
+        "pred": false,
+        "ground_truth": "DAYS_10",
+        "correct": false,
+        "confidence": 0.2720646560192108,
+        "latency": 8.509678200003691
+      },
+      {
+        "id": "doc2-q15-transfer-fee",
+        "pred": false,
+        "ground_truth": "BUYER_KOU",
+        "correct": false,
+        "confidence": 0.51978600025177,
+        "latency": 8.794756200048141
+      }
+    ]
+  }
+}

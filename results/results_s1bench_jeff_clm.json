@@ -1,0 +1,104 @@
+{
+  "jeff": {
+    "boolq": {
+      "correct": 43,
+      "total": 50,
+      "accuracy": 0.86,
+      "mean_latency": 0.35053996999165976,
+      "total_time": 17.526998499582987
+    },
+    "paws": {
+      "correct": 47,
+      "total": 50,
+      "accuracy": 0.94,
+      "mean_latency": 0.339827729993267,
+      "total_time": 16.99138649966335
+    },
+    "vitaminc-dev": {
+      "correct": 43,
+      "total": 50,
+      "accuracy": 0.86,
+      "mean_latency": 0.33561126800021157,
+      "total_time": 16.78056340001058
+    },
+    "massive-en-US": {
+      "correct": 46,
+      "total": 50,
+      "accuracy": 0.92,
+      "mean_latency": 0.34750940000405534,
+      "total_time": 17.375470000202768
+    },
+    "aegis2": {
+      "correct": 42,
+      "total": 50,
+      "accuracy": 0.84,
+      "mean_latency": 0.3312433580029756,
+      "total_time": 16.56216790014878
+    },
+    "helpsteer2": {
+      "correct": 4,
+      "total": 50,
+      "accuracy": 0.08,
+      "mean_latency": 0.4240510780015029,
+      "total_time": 21.202553900075145
+    },
+    "overall": {
+      "correct": 225,
+      "total": 300,
+      "accuracy": 0.75,
+      "total_time": 106.4391401996836,
+      "mean_latency": 0.35479713399894536
+    }
+  },
+  "clm": {
+    "boolq": {
+      "correct": 22,
+      "total": 50,
+      "accuracy": 0.44,
+      "mean_latency": 0.22368816800415517,
+      "total_time": 11.184408400207758
+    },
+    "paws": {
+      "correct": 23,
+      "total": 50,
+      "accuracy": 0.46,
+      "mean_latency": 0.19100229399977253,
+      "total_time": 9.550114699988626
+    },
+    "vitaminc-dev": {
+      "correct": 15,
+      "total": 50,
+      "accuracy": 0.3,
+      "mean_latency": 0.20076935200137086,
+      "total_time": 10.038467600068543
+    },
+    "massive-en-US": {
+      "correct": 0,
+      "total": 50,
+      "accuracy": 0.0,
+      "mean_latency": 0.2664614019950386,
+      "total_time": 13.32307009975193
+    },
+    "aegis2": {
+      "correct": 17,
+      "total": 50,
+      "accuracy": 0.34,
+      "mean_latency": 0.22791727400035597,
+      "total_time": 11.395863700017799
+    },
+    "helpsteer2": {
+      "correct": 5,
+      "total": 50,
+      "accuracy": 0.1,
+      "mean_latency": 1.3583878460002596,
+      "total_time": 67.91939230001299
+    },
+    "overall": {
+      "correct": 82,
+      "total": 300,
+      "accuracy": 0.2733333333333333,
+      "total_time": 123.41131680004764,
+      "mean_latency": 0.41137105600015883
+    }
+  }
+}

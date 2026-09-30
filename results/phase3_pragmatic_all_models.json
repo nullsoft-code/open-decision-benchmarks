@@ -1,0 +1,1318 @@
+{
+  "Jev (Cloud)": {
+    "correct": 20,
+    "total": 20,
+    "accuracy": 1.0,
+    "total_time": 4.211144208908081,
+    "mean_latency": 0.21055721044540404,
+    "items": [
+      {
+        "id": "pragmatic_01_ja_neg_q",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 0.0,
+          "2": 1.0
+        },
+        "latency": 0.22253847122192383,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『はい』は、否定事実（届いていないこと）に対する肯定であるため、届いていない。"
+      },
+      {
+        "id": "pragmatic_02_ja_neg_q_reverse",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "2": 0.0,
+          "1": 1.0
+        },
+        "latency": 0.22188091278076172,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『いいえ』は否定内容（完成していない）を否定するため、完成している。"
+      },
+      {
+        "id": "pragmatic_03_en_neg_q",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "2": 1.0,
+          "1": 0.0
+        },
+        "latency": 0.2304093837738037,
+        "status": "PASS",
+        "explanation": "In English, 'No' directly confirms the negative fact (did not receive)."
+      },
+      {
+        "id": "pragmatic_04_en_neg_q_affirmative",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 0.0,
+          "2": 1.0
+        },
+        "latency": 0.2068471908569336,
+        "status": "PASS",
+        "explanation": "The engineer answers 'No' to the negative question 'Didn't it fail?', meaning it did not fail."
+      },
+      {
+        "id": "pragmatic_05_ja_double_negation",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.99,
+        "probabilities": {
+          "2": 0.0,
+          "1": 1.0
+        },
+        "latency": 0.1948246955871582,
+        "status": "PASS",
+        "explanation": "ただし書き『この限りではない』によって、組織再編に伴う事業譲渡の場合は事前承諾義務および譲渡禁止が解除される。"
+      },
+      {
+        "id": "pragmatic_06_ja_multiple_negation_scope",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.99,
+        "probabilities": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "latency": 0.30159616470336914,
+        "status": "PASS",
+        "explanation": "『不適合と認定されない限り、拒絶してはならない』＝適合している場合は拒絶禁止＝付与すべき。"
+      },
+      {
+        "id": "pragmatic_07_en_double_negation",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "2": 0.0,
+          "1": 1.0
+        },
+        "latency": 0.23170042037963867,
+        "status": "PASS",
+        "explanation": "'shall not be deemed not to have delivered' is a double negative meaning 'shall be deemed delivered'."
+      },
+      {
+        "id": "pragmatic_08_en_lexical_bias_positive",
+        "category": "Superficial Cue Bias",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "2": 1.0,
+          "1": 0.0
+        },
+        "latency": 0.20451045036315918,
+        "status": "PASS",
+        "explanation": "Despite strong positive words (encouraged, welcomed, celebrated), the exception condition 'unless' triggers strict prohibition."
+      },
+      {
+        "id": "pragmatic_09_ja_lexical_bias_negative",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.87,
+        "probabilities": {
+          "1": 0.93,
+          "2": 0.07
+        },
+        "latency": 0.18889331817626953,
+        "status": "PASS",
+        "explanation": "『エラー、例外、クラッシュ、破壊』などの否定語が密集しているが、文意はそれらを『発生しないことを保証する防御機構』。"
+      },
+      {
+        "id": "pragmatic_10_ja_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "latency": 0.19176244735717773,
+        "status": "PASS",
+        "explanation": "『禁煙に成功した』という記述は、過去に喫煙していたという事実を言語学的前提（Presupposition）として内包している。"
+      },
+      {
+        "id": "pragmatic_11_en_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "latency": 0.1967318058013916,
+        "status": "PASS",
+        "explanation": "'regrets that they stopped' presupposes the truth of 'they stopped maintaining'."
+      },
+      {
+        "id": "pragmatic_12_ja_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "2": 0.0,
+          "1": 1.0
+        },
+        "latency": 0.19535279273986816,
+        "status": "PASS",
+        "explanation": "『一度も婚姻歴がない（生涯独身）』と『同居する妻に関する配偶者扶養手当』は論理的に矛盾する。"
+      },
+      {
+        "id": "pragmatic_13_en_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "latency": 0.18246722221374512,
+        "status": "PASS",
+        "explanation": "Being completely blind from birth contradicts admiring vibrant rainbow colors with his own eyes."
+      },
+      {
+        "id": "pragmatic_14_ja_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 0.0,
+          "2": 1.0
+        },
+        "latency": 0.21463942527770996,
+        "status": "PASS",
+        "explanation": "反事実条件（完了していなければ減額）に対し、実際には期日内に完了したため、ペナルティは発生しない。"
+      },
+      {
+        "id": "pragmatic_15_en_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.93,
+        "probabilities": {
+          "2": 0.04,
+          "1": 0.96
+        },
+        "latency": 0.18601465225219727,
+        "status": "PASS",
+        "explanation": "'Had it activated, wouldn't have been lost... Unfortunately stopped' means the condition was not met and transactions were lost."
+      },
+      {
+        "id": "pragmatic_16_ja_except_exception",
+        "category": "Exception Nesting",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.99,
+        "probabilities": {
+          "1": 0.0,
+          "2": 1.0
+        },
+        "latency": 0.1970508098602295,
+        "status": "PASS",
+        "explanation": "副業禁止の原則に対し、農業はただし書きによって事前承認が免除されているため、違反ではない。"
+      },
+      {
+        "id": "pragmatic_17_en_pragmatic_implicature",
+        "category": "Gricean Implicature",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "latency": 0.19449543952941895,
+        "status": "PASS",
+        "explanation": "Under Gricean Pragmatics, mentioning only clothing and attendance for a prestigious technical research position implicates a lack of technical merit."
+      },
+      {
+        "id": "pragmatic_18_ja_negative_conjunction",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 0.0,
+          "2": 1.0
+        },
+        "latency": 0.19889307022094727,
+        "status": "PASS",
+        "explanation": "『大型アップデート、停止、制限』といった語句があるが、主眼は『一時停止を一切伴わない（通常通り利用可能）』。"
+      },
+      {
+        "id": "pragmatic_19_en_double_negation_scope_logic",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "2": 1.0,
+          "1": 0.0
+        },
+        "latency": 0.21863889694213867,
+        "status": "PASS",
+        "explanation": "'Nothing shall operate to exclude' establishes that fraud liability is never excluded."
+      },
+      {
+        "id": "pragmatic_20_ja_pragmatic_quantifier",
+        "category": "Partial Negation Quantifier",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 1.0,
+        "probabilities": {
+          "1": 1.0,
+          "2": 0.0
+        },
+        "latency": 0.23189663887023926,
+        "status": "PASS",
+        "explanation": "『全員が〜わけではない』は部分否定であり、全員ではない＝少なくとも1人以上は反対しなかった（賛成または中立）ことを意味する。"
+      }
+    ]
+  },
+  "Lev (Local :8000)": {
+    "correct": 20,
+    "total": 20,
+    "accuracy": 1.0,
+    "total_time": 11.774106740951538,
+    "mean_latency": 0.5887053370475769,
+    "items": [
+      {
+        "id": "pragmatic_01_ja_neg_q",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9331359211512065,
+        "probabilities": {
+          "1": 0.01700519641739245,
+          "2": 0.9829948035826075
+        },
+        "latency": 0.6040356159210205,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『はい』は、否定事実（届いていないこと）に対する肯定であるため、届いていない。"
+      },
+      {
+        "id": "pragmatic_02_ja_neg_q_reverse",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9837632947398931,
+        "probabilities": {
+          "1": 0.9959242116341702,
+          "2": 0.004075788365829815
+        },
+        "latency": 0.6217184066772461,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『いいえ』は否定内容（完成していない）を否定するため、完成している。"
+      },
+      {
+        "id": "pragmatic_03_en_neg_q",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9476282820943811,
+        "probabilities": {
+          "1": 0.01326899572392628,
+          "2": 0.9867310042760737
+        },
+        "latency": 0.6043901443481445,
+        "status": "PASS",
+        "explanation": "In English, 'No' directly confirms the negative fact (did not receive)."
+      },
+      {
+        "id": "pragmatic_04_en_neg_q_affirmative",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.947748988602505,
+        "probabilities": {
+          "1": 0.01323799742520352,
+          "2": 0.9867620025747965
+        },
+        "latency": 0.5479397773742676,
+        "status": "PASS",
+        "explanation": "The engineer answers 'No' to the negative question 'Didn't it fail?', meaning it did not fail."
+      },
+      {
+        "id": "pragmatic_05_ja_double_negation",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9879170442926037,
+        "probabilities": {
+          "1": 0.9969700806619559,
+          "2": 0.0030299193380440136
+        },
+        "latency": 0.6096212863922119,
+        "status": "PASS",
+        "explanation": "ただし書き『この限りではない』によって、組織再編に伴う事業譲渡の場合は事前承諾義務および譲渡禁止が解除される。"
+      },
+      {
+        "id": "pragmatic_06_ja_multiple_negation_scope",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9834128344207085,
+        "probabilities": {
+          "1": 0.9958358686149854,
+          "2": 0.004164131385014607
+        },
+        "latency": 0.6086370944976807,
+        "status": "PASS",
+        "explanation": "『不適合と認定されない限り、拒絶してはならない』＝適合している場合は拒絶禁止＝付与すべき。"
+      },
+      {
+        "id": "pragmatic_07_en_double_negation",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9811511141862312,
+        "probabilities": {
+          "1": 0.9952653617471727,
+          "2": 0.004734638252827102
+        },
+        "latency": 0.5574812889099121,
+        "status": "PASS",
+        "explanation": "'shall not be deemed not to have delivered' is a double negative meaning 'shall be deemed delivered'."
+      },
+      {
+        "id": "pragmatic_08_en_lexical_bias_positive",
+        "category": "Superficial Cue Bias",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9542918412371222,
+        "probabilities": {
+          "1": 0.01156068922610195,
+          "2": 0.988439310773898
+        },
+        "latency": 0.5604662895202637,
+        "status": "PASS",
+        "explanation": "Despite strong positive words (encouraged, welcomed, celebrated), the exception condition 'unless' triggers strict prohibition."
+      },
+      {
+        "id": "pragmatic_09_ja_lexical_bias_negative",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9774873278603096,
+        "probabilities": {
+          "1": 0.9943397940334942,
+          "2": 0.005660205966505887
+        },
+        "latency": 0.578984260559082,
+        "status": "PASS",
+        "explanation": "『エラー、例外、クラッシュ、破壊』などの否定語が密集しているが、文意はそれらを『発生しないことを保証する防御機構』。"
+      },
+      {
+        "id": "pragmatic_10_ja_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9866692133776311,
+        "probabilities": {
+          "1": 0.9966561218231461,
+          "2": 0.003343878176853883
+        },
+        "latency": 0.5933544635772705,
+        "status": "PASS",
+        "explanation": "『禁煙に成功した』という記述は、過去に喫煙していたという事実を言語学的前提（Presupposition）として内包している。"
+      },
+      {
+        "id": "pragmatic_11_en_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9782299717807197,
+        "probabilities": {
+          "1": 0.9945275451834609,
+          "2": 0.005472454816539055
+        },
+        "latency": 0.5679373741149902,
+        "status": "PASS",
+        "explanation": "'regrets that they stopped' presupposes the truth of 'they stopped maintaining'."
+      },
+      {
+        "id": "pragmatic_12_ja_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9356007691101289,
+        "probabilities": {
+          "1": 0.983632290358628,
+          "2": 0.016367709641372047
+        },
+        "latency": 0.6148126125335693,
+        "status": "PASS",
+        "explanation": "『一度も婚姻歴がない（生涯独身）』と『同居する妻に関する配偶者扶養手当』は論理的に矛盾する。"
+      },
+      {
+        "id": "pragmatic_13_en_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.973380147461222,
+        "probabilities": {
+          "1": 0.9933001488600075,
+          "2": 0.006699851139992524
+        },
+        "latency": 0.5531914234161377,
+        "status": "PASS",
+        "explanation": "Being completely blind from birth contradicts admiring vibrant rainbow colors with his own eyes."
+      },
+      {
+        "id": "pragmatic_14_ja_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9411000541925558,
+        "probabilities": {
+          "1": 0.014948442381493805,
+          "2": 0.9850515576185062
+        },
+        "latency": 0.6046817302703857,
+        "status": "PASS",
+        "explanation": "反事実条件（完了していなければ減額）に対し、実際には期日内に完了したため、ペナルティは発生しない。"
+      },
+      {
+        "id": "pragmatic_15_en_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9806497053391365,
+        "probabilities": {
+          "1": 0.9951387950209356,
+          "2": 0.004861204979064456
+        },
+        "latency": 0.5531342029571533,
+        "status": "PASS",
+        "explanation": "'Had it activated, wouldn't have been lost... Unfortunately stopped' means the condition was not met and transactions were lost."
+      },
+      {
+        "id": "pragmatic_16_ja_except_exception",
+        "category": "Exception Nesting",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.3504857054708479,
+        "probabilities": {
+          "1": 0.2039908339802431,
+          "2": 0.7960091660197569
+        },
+        "latency": 0.5829939842224121,
+        "status": "PASS",
+        "explanation": "副業禁止の原則に対し、農業はただし書きによって事前承認が免除されているため、違反ではない。"
+      },
+      {
+        "id": "pragmatic_17_en_pragmatic_implicature",
+        "category": "Gricean Implicature",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.810949464753981,
+        "probabilities": {
+          "1": 0.9502636629670389,
+          "2": 0.04973633703296109
+        },
+        "latency": 0.5974204540252686,
+        "status": "PASS",
+        "explanation": "Under Gricean Pragmatics, mentioning only clothing and attendance for a prestigious technical research position implicates a lack of technical merit."
+      },
+      {
+        "id": "pragmatic_18_ja_negative_conjunction",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9604172758358298,
+        "probabilities": {
+          "1": 0.00999559291884171,
+          "2": 0.9900044070811582
+        },
+        "latency": 0.5755889415740967,
+        "status": "PASS",
+        "explanation": "『大型アップデート、停止、制限』といった語句があるが、主眼は『一時停止を一切伴わない（通常通り利用可能）』。"
+      },
+      {
+        "id": "pragmatic_19_en_double_negation_scope_logic",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.8751990813041437,
+        "probabilities": {
+          "1": 0.03223962296274392,
+          "2": 0.967760377037256
+        },
+        "latency": 0.6394169330596924,
+        "status": "PASS",
+        "explanation": "'Nothing shall operate to exclude' establishes that fraud liability is never excluded."
+      },
+      {
+        "id": "pragmatic_20_ja_pragmatic_quantifier",
+        "category": "Partial Negation Quantifier",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9821737174729872,
+        "probabilities": {
+          "1": 0.9955233893251123,
+          "2": 0.004476610674887812
+        },
+        "latency": 0.5983004570007324,
+        "status": "PASS",
+        "explanation": "『全員が〜わけではない』は部分否定であり、全員ではない＝少なくとも1人以上は反対しなかった（賛成または中立）ことを意味する。"
+      }
+    ]
+  },
+  "Kev-4B (Local :8090)": {
+    "correct": 18,
+    "total": 20,
+    "accuracy": 0.9,
+    "total_time": 3.3163349628448486,
+    "mean_latency": 0.16581674814224243,
+    "items": [
+      {
+        "id": "pragmatic_01_ja_neg_q",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.7241795659065247,
+        "probabilities": {
+          "1": 0.2758,
+          "2": 0.7242
+        },
+        "latency": 0.1633310317993164,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『はい』は、否定事実（届いていないこと）に対する肯定であるため、届いていない。"
+      },
+      {
+        "id": "pragmatic_02_ja_neg_q_reverse",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7443486452102661,
+        "probabilities": {
+          "1": 0.7443,
+          "2": 0.2557
+        },
+        "latency": 0.17623090744018555,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『いいえ』は否定内容（完成していない）を否定するため、完成している。"
+      },
+      {
+        "id": "pragmatic_03_en_neg_q",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.8903394937515259,
+        "probabilities": {
+          "1": 0.1097,
+          "2": 0.8903
+        },
+        "latency": 0.1898510456085205,
+        "status": "PASS",
+        "explanation": "In English, 'No' directly confirms the negative fact (did not receive)."
+      },
+      {
+        "id": "pragmatic_04_en_neg_q_affirmative",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.782084584236145,
+        "probabilities": {
+          "1": 0.2179,
+          "2": 0.7821
+        },
+        "latency": 0.15958738327026367,
+        "status": "PASS",
+        "explanation": "The engineer answers 'No' to the negative question 'Didn't it fail?', meaning it did not fail."
+      },
+      {
+        "id": "pragmatic_05_ja_double_negation",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.552747905254364,
+        "probabilities": {
+          "1": 0.5527,
+          "2": 0.4473
+        },
+        "latency": 0.15869426727294922,
+        "status": "PASS",
+        "explanation": "ただし書き『この限りではない』によって、組織再編に伴う事業譲渡の場合は事前承諾義務および譲渡禁止が解除される。"
+      },
+      {
+        "id": "pragmatic_06_ja_multiple_negation_scope",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.8117515444755554,
+        "probabilities": {
+          "1": 0.8118,
+          "2": 0.1882
+        },
+        "latency": 0.1686868667602539,
+        "status": "PASS",
+        "explanation": "『不適合と認定されない限り、拒絶してはならない』＝適合している場合は拒絶禁止＝付与すべき。"
+      },
+      {
+        "id": "pragmatic_07_en_double_negation",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.894341230392456,
+        "probabilities": {
+          "1": 0.8943,
+          "2": 0.1057
+        },
+        "latency": 0.15848612785339355,
+        "status": "PASS",
+        "explanation": "'shall not be deemed not to have delivered' is a double negative meaning 'shall be deemed delivered'."
+      },
+      {
+        "id": "pragmatic_08_en_lexical_bias_positive",
+        "category": "Superficial Cue Bias",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.8180097937583923,
+        "probabilities": {
+          "1": 0.182,
+          "2": 0.818
+        },
+        "latency": 0.18250560760498047,
+        "status": "PASS",
+        "explanation": "Despite strong positive words (encouraged, welcomed, celebrated), the exception condition 'unless' triggers strict prohibition."
+      },
+      {
+        "id": "pragmatic_09_ja_lexical_bias_negative",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7161527276039124,
+        "probabilities": {
+          "1": 0.7162,
+          "2": 0.2838
+        },
+        "latency": 0.21726036071777344,
+        "status": "PASS",
+        "explanation": "『エラー、例外、クラッシュ、破壊』などの否定語が密集しているが、文意はそれらを『発生しないことを保証する防御機構』。"
+      },
+      {
+        "id": "pragmatic_10_ja_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.6891542673110962,
+        "probabilities": {
+          "1": 0.6892,
+          "2": 0.3108
+        },
+        "latency": 0.1611928939819336,
+        "status": "PASS",
+        "explanation": "『禁煙に成功した』という記述は、過去に喫煙していたという事実を言語学的前提（Presupposition）として内包している。"
+      },
+      {
+        "id": "pragmatic_11_en_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.8460960984230042,
+        "probabilities": {
+          "1": 0.8461,
+          "2": 0.1539
+        },
+        "latency": 0.15199995040893555,
+        "status": "PASS",
+        "explanation": "'regrets that they stopped' presupposes the truth of 'they stopped maintaining'."
+      },
+      {
+        "id": "pragmatic_12_ja_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7104983329772949,
+        "probabilities": {
+          "1": 0.7105,
+          "2": 0.2895
+        },
+        "latency": 0.15015840530395508,
+        "status": "PASS",
+        "explanation": "『一度も婚姻歴がない（生涯独身）』と『同居する妻に関する配偶者扶養手当』は論理的に矛盾する。"
+      },
+      {
+        "id": "pragmatic_13_en_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9168716073036194,
+        "probabilities": {
+          "1": 0.9169,
+          "2": 0.0831
+        },
+        "latency": 0.1529219150543213,
+        "status": "PASS",
+        "explanation": "Being completely blind from birth contradicts admiring vibrant rainbow colors with his own eyes."
+      },
+      {
+        "id": "pragmatic_14_ja_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.6568022966384888,
+        "probabilities": {
+          "1": 0.3432,
+          "2": 0.6568
+        },
+        "latency": 0.16994357109069824,
+        "status": "PASS",
+        "explanation": "反事実条件（完了していなければ減額）に対し、実際には期日内に完了したため、ペナルティは発生しない。"
+      },
+      {
+        "id": "pragmatic_15_en_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7630908489227295,
+        "probabilities": {
+          "1": 0.7631,
+          "2": 0.2369
+        },
+        "latency": 0.14877629280090332,
+        "status": "PASS",
+        "explanation": "'Had it activated, wouldn't have been lost... Unfortunately stopped' means the condition was not met and transactions were lost."
+      },
+      {
+        "id": "pragmatic_16_ja_except_exception",
+        "category": "Exception Nesting",
+        "language": "ja",
+        "expected": "2",
+        "choice": "1",
+        "is_correct": false,
+        "confidence": 0.6599763035774231,
+        "probabilities": {
+          "1": 0.66,
+          "2": 0.34
+        },
+        "latency": 0.17511558532714844,
+        "status": "FAIL",
+        "explanation": "副業禁止の原則に対し、農業はただし書きによって事前承認が免除されているため、違反ではない。"
+      },
+      {
+        "id": "pragmatic_17_en_pragmatic_implicature",
+        "category": "Gricean Implicature",
+        "language": "en",
+        "expected": "1",
+        "choice": "2",
+        "is_correct": false,
+        "confidence": 0.6120587587356567,
+        "probabilities": {
+          "1": 0.3879,
+          "2": 0.6121
+        },
+        "latency": 0.15017080307006836,
+        "status": "FAIL",
+        "explanation": "Under Gricean Pragmatics, mentioning only clothing and attendance for a prestigious technical research position implicates a lack of technical merit."
+      },
+      {
+        "id": "pragmatic_18_ja_negative_conjunction",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.7276835441589355,
+        "probabilities": {
+          "1": 0.2723,
+          "2": 0.7277
+        },
+        "latency": 0.164445161819458,
+        "status": "PASS",
+        "explanation": "『大型アップデート、停止、制限』といった語句があるが、主眼は『一時停止を一切伴わない（通常通り利用可能）』。"
+      },
+      {
+        "id": "pragmatic_19_en_double_negation_scope_logic",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.5091303586959839,
+        "probabilities": {
+          "1": 0.4909,
+          "2": 0.5091
+        },
+        "latency": 0.16420316696166992,
+        "status": "PASS",
+        "explanation": "'Nothing shall operate to exclude' establishes that fraud liability is never excluded."
+      },
+      {
+        "id": "pragmatic_20_ja_pragmatic_quantifier",
+        "category": "Partial Negation Quantifier",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.577856183052063,
+        "probabilities": {
+          "1": 0.5779,
+          "2": 0.4221
+        },
+        "latency": 0.15277361869812012,
+        "status": "PASS",
+        "explanation": "『全員が〜わけではない』は部分否定であり、全員ではない＝少なくとも1人以上は反対しなかった（賛成または中立）ことを意味する。"
+      }
+    ]
+  },
+  "Qwen3.5-4B (SGLang :8002)": {
+    "correct": 18,
+    "total": 20,
+    "accuracy": 0.9,
+    "total_time": 46.85798645019531,
+    "mean_latency": 2.3428993225097656,
+    "items": [
+      {
+        "id": "pragmatic_01_ja_neg_q",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9362849986365572,
+        "probabilities": {
+          "2": 0.9363,
+          "1": 0.0637
+        },
+        "latency": 6.262833833694458,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『はい』は、否定事実（届いていないこと）に対する肯定であるため、届いていない。"
+      },
+      {
+        "id": "pragmatic_02_ja_neg_q_reverse",
+        "category": "Negative Question QA",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.8175744761936437,
+        "probabilities": {
+          "1": 0.8176,
+          "2": 0.1824
+        },
+        "latency": 2.1696085929870605,
+        "status": "PASS",
+        "explanation": "日本語の否定疑問文に対する『いいえ』は否定内容（完成していない）を否定するため、完成している。"
+      },
+      {
+        "id": "pragmatic_03_en_neg_q",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9919380094250445,
+        "probabilities": {
+          "2": 0.9919,
+          "1": 0.0081
+        },
+        "latency": 2.1225647926330566,
+        "status": "PASS",
+        "explanation": "In English, 'No' directly confirms the negative fact (did not receive)."
+      },
+      {
+        "id": "pragmatic_04_en_neg_q_affirmative",
+        "category": "Negative Question QA",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9433475619502378,
+        "probabilities": {
+          "2": 0.9433,
+          "1": 0.0567
+        },
+        "latency": 2.1193301677703857,
+        "status": "PASS",
+        "explanation": "The engineer answers 'No' to the negative question 'Didn't it fail?', meaning it did not fail."
+      },
+      {
+        "id": "pragmatic_05_ja_double_negation",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.5926665999540697,
+        "probabilities": {
+          "1": 0.5927,
+          "2": 0.4073
+        },
+        "latency": 2.1544313430786133,
+        "status": "PASS",
+        "explanation": "ただし書き『この限りではない』によって、組織再編に伴う事業譲渡の場合は事前承諾義務および譲渡禁止が解除される。"
+      },
+      {
+        "id": "pragmatic_06_ja_multiple_negation_scope",
+        "category": "Double Negation Scope",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.8670357460591569,
+        "probabilities": {
+          "1": 0.867,
+          "2": 0.133
+        },
+        "latency": 2.142460584640503,
+        "status": "PASS",
+        "explanation": "『不適合と認定されない限り、拒絶してはならない』＝適合している場合は拒絶禁止＝付与すべき。"
+      },
+      {
+        "id": "pragmatic_07_en_double_negation",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9046505248181417,
+        "probabilities": {
+          "1": 0.9047,
+          "2": 0.0953
+        },
+        "latency": 2.1455650329589844,
+        "status": "PASS",
+        "explanation": "'shall not be deemed not to have delivered' is a double negative meaning 'shall be deemed delivered'."
+      },
+      {
+        "id": "pragmatic_08_en_lexical_bias_positive",
+        "category": "Superficial Cue Bias",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.8807970779778823,
+        "probabilities": {
+          "2": 0.8808,
+          "1": 0.1192
+        },
+        "latency": 2.152066230773926,
+        "status": "PASS",
+        "explanation": "Despite strong positive words (encouraged, welcomed, celebrated), the exception condition 'unless' triggers strict prohibition."
+      },
+      {
+        "id": "pragmatic_09_ja_lexical_bias_negative",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.6224593312018546,
+        "probabilities": {
+          "1": 0.6225,
+          "2": 0.3775
+        },
+        "latency": 2.1568305492401123,
+        "status": "PASS",
+        "explanation": "『エラー、例外、クラッシュ、破壊』などの否定語が密集しているが、文意はそれらを『発生しないことを保証する防御機構』。"
+      },
+      {
+        "id": "pragmatic_10_ja_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7310585786300049,
+        "probabilities": {
+          "1": 0.7311,
+          "2": 0.2689
+        },
+        "latency": 2.1492037773132324,
+        "status": "PASS",
+        "explanation": "『禁煙に成功した』という記述は、過去に喫煙していたという事実を言語学的前提（Presupposition）として内包している。"
+      },
+      {
+        "id": "pragmatic_11_en_presupposition",
+        "category": "Pragmatic Presupposition",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.8807970779778823,
+        "probabilities": {
+          "1": 0.8808,
+          "2": 0.1192
+        },
+        "latency": 2.155557632446289,
+        "status": "PASS",
+        "explanation": "'regrets that they stopped' presupposes the truth of 'they stopped maintaining'."
+      },
+      {
+        "id": "pragmatic_12_ja_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7549149868676283,
+        "probabilities": {
+          "1": 0.7549,
+          "2": 0.2451
+        },
+        "latency": 2.132904529571533,
+        "status": "PASS",
+        "explanation": "『一度も婚姻歴がない（生涯独身）』と『同居する妻に関する配偶者扶養手当』は論理的に矛盾する。"
+      },
+      {
+        "id": "pragmatic_13_en_contradiction_detection",
+        "category": "Contradiction Detection",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.7549149868676283,
+        "probabilities": {
+          "1": 0.7549,
+          "2": 0.2451
+        },
+        "latency": 2.1358070373535156,
+        "status": "PASS",
+        "explanation": "Being completely blind from birth contradicts admiring vibrant rainbow colors with his own eyes."
+      },
+      {
+        "id": "pragmatic_14_ja_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.96036116089903,
+        "probabilities": {
+          "2": 0.9604,
+          "1": 0.0396
+        },
+        "latency": 2.0977489948272705,
+        "status": "PASS",
+        "explanation": "反事実条件（完了していなければ減額）に対し、実際には期日内に完了したため、ペナルティは発生しない。"
+      },
+      {
+        "id": "pragmatic_15_en_counterfactual",
+        "category": "Counterfactual Logic",
+        "language": "en",
+        "expected": "1",
+        "choice": "2",
+        "is_correct": false,
+        "confidence": 0.5,
+        "probabilities": {
+          "2": 0.5,
+          "1": 0.5
+        },
+        "latency": 2.1201493740081787,
+        "status": "FAIL",
+        "explanation": "'Had it activated, wouldn't have been lost... Unfortunately stopped' means the condition was not met and transactions were lost."
+      },
+      {
+        "id": "pragmatic_16_ja_except_exception",
+        "category": "Exception Nesting",
+        "language": "ja",
+        "expected": "2",
+        "choice": "1",
+        "is_correct": false,
+        "confidence": 0.5156199157230156,
+        "probabilities": {
+          "1": 0.5156,
+          "2": 0.4844
+        },
+        "latency": 2.141113042831421,
+        "status": "FAIL",
+        "explanation": "副業禁止の原則に対し、農業はただし書きによって事前承認が免除されているため、違反ではない。"
+      },
+      {
+        "id": "pragmatic_17_en_pragmatic_implicature",
+        "category": "Gricean Implicature",
+        "language": "en",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.5312093733737563,
+        "probabilities": {
+          "1": 0.5312,
+          "2": 0.4688
+        },
+        "latency": 2.122370481491089,
+        "status": "PASS",
+        "explanation": "Under Gricean Pragmatics, mentioning only clothing and attendance for a prestigious technical research position implicates a lack of technical merit."
+      },
+      {
+        "id": "pragmatic_18_ja_negative_conjunction",
+        "category": "Superficial Cue Bias",
+        "language": "ja",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.5621765008857981,
+        "probabilities": {
+          "2": 0.5622,
+          "1": 0.4378
+        },
+        "latency": 2.103652000427246,
+        "status": "PASS",
+        "explanation": "『大型アップデート、停止、制限』といった語句があるが、主眼は『一時停止を一切伴わない（通常通り利用可能）』。"
+      },
+      {
+        "id": "pragmatic_19_en_double_negation_scope_logic",
+        "category": "Double Negation Scope",
+        "language": "en",
+        "expected": "2",
+        "choice": "2",
+        "is_correct": true,
+        "confidence": 0.9770226354423304,
+        "probabilities": {
+          "2": 0.977,
+          "1": 0.023
+        },
+        "latency": 2.125004529953003,
+        "status": "PASS",
+        "explanation": "'Nothing shall operate to exclude' establishes that fraud liability is never excluded."
+      },
+      {
+        "id": "pragmatic_20_ja_pragmatic_quantifier",
+        "category": "Partial Negation Quantifier",
+        "language": "ja",
+        "expected": "1",
+        "choice": "1",
+        "is_correct": true,
+        "confidence": 0.9284088005554476,
+        "probabilities": {
+          "1": 0.9284,
+          "2": 0.0716
+        },
+        "latency": 2.1487839221954346,
+        "status": "PASS",
+        "explanation": "『全員が〜わけではない』は部分否定であり、全員ではない＝少なくとも1人以上は反対しなかった（賛成または中立）ことを意味する。"
+      }
+    ]
+  }
+}

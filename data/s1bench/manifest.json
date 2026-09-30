@@ -1,0 +1,32 @@
+{
+  "boolq": {
+    "file": "D:\\test_arc\\local_jev_proj\\s1bench_data\\boolq.json",
+    "type": "noul",
+    "items": 300
+  },
+  "paws": {
+    "file": "D:\\test_arc\\local_jev_proj\\s1bench_data\\paws.json",
+    "type": "noul",
+    "items": 250
+  },
+  "vitaminc-dev": {
+    "file": "D:\\test_arc\\local_jev_proj\\s1bench_data\\vitaminc-dev.json",
+    "type": "choice",
+    "items": 599
+  },
+  "massive-en-US": {
+    "file": "D:\\test_arc\\local_jev_proj\\s1bench_data\\massive-en-US.json",
+    "type": "choice",
+    "items": 350
+  },
+  "aegis2": {
+    "file": "D:\\test_arc\\local_jev_proj\\s1bench_data\\aegis2.json",
+    "type": "noul",
+    "items": 250
+  },
+  "helpsteer2": {
+    "file": "D:\\test_arc\\local_jev_proj\\s1bench_data\\helpsteer2.json",
+    "type": "score",
+    "items": 249
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "benchmark": "Phase 3: Pragmatic Logic & Negation Traps",
+  "num_questions": 20,
+  "subsets": {
+    "japanese": 11,
+    "english": 9
+  },
+  "test_categories": [
+    "Negative Question Inversion (否定疑問文のYes/No反転解釈)",
+    "Lexical Sentiment Traps (エラー・クラッシュ・破壊等の表層バイアス)",
+    "Nested Exception Logic (原則禁止→条件付き許可→例外免除の階層判定)",
+    "Gricean Implicatures (グライスの会話の公準・裏読みニュアンス)"
+  ],
+  "models": {
+    "Jev (Cloud API)": {
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20,
+      "avg_latency_sec": 0.21,
+      "total_time_sec": 4.2,
+      "japanese_acc": 1.0,
+      "english_acc": 1.0
+    },
+    "Lev (Local 8B)": {
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20,
+      "avg_latency_sec": 0.59,
+      "total_time_sec": 11.8,
+      "japanese_acc": 1.0,
+      "english_acc": 1.0
+    },
+    "Kev-4B (Local)": {
+      "accuracy": 0.90,
+      "correct": 18,
+      "total": 20,
+      "avg_latency_sec": 0.17,
+      "total_time_sec": 3.3,
+      "japanese_acc": 0.909,
+      "english_acc": 0.889,
+      "failure_points": ["Nested Exception Logic", "Gricean Implicatures"]
+    },
+    "Qwen3.5-4B (SGLang)": {
+      "accuracy": 0.90,
+      "correct": 18,
+      "total": 20,
+      "avg_latency_sec": 2.34,
+      "total_time_sec": 46.9,
+      "japanese_acc": 0.909,
+      "english_acc": 0.889,
+      "failure_points": ["Nested Exception Logic", "Boundary phrasing"]
+    },
+    "Jeff-0.8B (Local)": {
+      "accuracy": 0.75,
+      "correct": 15,
+      "total": 20,
+      "avg_latency_sec": 0.32,
+      "total_time_sec": 6.4,
+      "japanese_acc": 0.818,
+      "english_acc": 0.667,
+      "failure_points": ["Nested Exception Logic", "Complex English Implicatures"]
+    },
+    "CLM-8B (Local)": {
+      "accuracy": 0.75,
+      "correct": 15,
+      "total": 20,
+      "avg_latency_sec": 0.20,
+      "total_time_sec": 4.0,
+      "japanese_acc": 0.636,
+      "english_acc": 0.889,
+      "failure_points": ["Japanese Nuanced Negations", "Multi-clause Nested Exceptions"]
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "benchmark": "levbench",
+  "version": "1.0.0",
+  "protocol": "TypeSafe ADR-010 /v1/systemone",
+  "dataset": "S1Bench (6 tasks x 50 questions = 300 questions)",
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 3090 (24GB)",
+    "cuda": "12.8",
+    "os": "Windows 11 / WSL2 Ubuntu 24.04"
+  },
+  "models": {
+    "Jev (Cloud API)": {
+      "type": "Cloud API (jev-1.13.0)",
+      "concurrency": 10,
+      "macro_accuracy": 0.7733,
+      "classification_5task_acc": 0.864,
+      "log_loss": 1.211,
+      "brier_score": 0.342,
+      "ece": 0.114,
+      "wall_time_sec": 6.4,
+      "p50_latency_ms": 186.0,
+      "vram_gb": 0.0,
+      "subsets": {
+        "aegis2": { "accuracy": 0.88, "selective_acc_09": 0.944 },
+        "boolq": { "accuracy": 0.84, "selective_acc_09": 0.889 },
+        "helpsteer2": { "accuracy": 0.32, "selective_acc_09": null },
+        "massive-en-US": { "accuracy": 0.88, "selective_acc_09": 0.953 },
+        "paws": { "accuracy": 0.90, "selective_acc_09": 0.931 },
+        "vitaminc-dev": { "accuracy": 0.82, "selective_acc_09": 0.875 }
+      }
+    },
+    "Lev (Local 8B)": {
+      "type": "Local Decision Model (lev serve :8000)",
+      "concurrency": 1,
+      "macro_accuracy": 0.7500,
+      "classification_5task_acc": 0.812,
+      "log_loss": 0.797,
+      "brier_score": 0.370,
+      "ece": 0.116,
+      "wall_time_sec": 164.0,
+      "p50_latency_ms": 573.0,
+      "vram_gb": 11.0,
+      "subsets": {
+        "aegis2": { "accuracy": 0.90, "selective_acc_09": 0.911 },
+        "boolq": { "accuracy": 0.80, "selective_acc_09": 0.860 },
+        "helpsteer2": { "accuracy": 0.44, "selective_acc_09": null },
+        "massive-en-US": { "accuracy": 0.86, "selective_acc_09": 0.947 },
+        "paws": { "accuracy": 0.76, "selective_acc_09": 0.761 },
+        "vitaminc-dev": { "accuracy": 0.74, "selective_acc_09": 0.667 }
+      }
+    },
+    "Jeff-0.8B (Local)": {
+      "type": "Local Decision Model (jeff_server :8092)",
+      "concurrency": 1,
+      "macro_accuracy": 0.7667,
+      "classification_5task_acc": 0.884,
+      "log_loss": 0.545,
+      "brier_score": 0.283,
+      "ece": 0.080,
+      "wall_time_sec": 101.1,
+      "p50_latency_ms": 326.5,
+      "vram_gb": 1.65,
+      "subsets": {
+        "aegis2": { "accuracy": 0.84, "selective_acc_09": 1.000 },
+        "boolq": { "accuracy": 0.86, "selective_acc_09": 0.966 },
+        "helpsteer2": { "accuracy": 0.18, "selective_acc_09": null },
+        "massive-en-US": { "accuracy": 0.92, "selective_acc_09": 0.975 },
+        "paws": { "accuracy": 0.94, "selective_acc_09": 0.955 },
+        "vitaminc-dev": { "accuracy": 0.86, "selective_acc_09": 0.944 }
+      }
+    },
+    "Kev-4B (Local)": {
+      "type": "Local Gated DeltaNet (kev_server :8090)",
+      "concurrency": 1,
+      "macro_accuracy": 0.7000,
+      "classification_5task_acc": 0.776,
+      "log_loss": 0.852,
+      "brier_score": 0.413,
+      "ece": 0.120,
+      "wall_time_sec": 48.8,
+      "p50_latency_ms": 169.0,
+      "vram_gb": 7.94,
+      "subsets": {
+        "aegis2": { "accuracy": 0.86, "selective_acc_09": 1.000 },
+        "boolq": { "accuracy": 0.82, "selective_acc_09": 0.967 },
+        "helpsteer2": { "accuracy": 0.32, "selective_acc_09": null },
+        "massive-en-US": { "accuracy": 0.52, "selective_acc_09": null },
+        "paws": { "accuracy": 0.84, "selective_acc_09": 0.867 },
+        "vitaminc-dev": { "accuracy": 0.78, "selective_acc_09": 0.800 }
+      }
+    },
+    "Qwen3.5-4B (SGLang)": {
+      "type": "Prefix Caching LLM (sglang_systemone_adapter :8002)",
+      "concurrency": 1,
+      "macro_accuracy": 0.6000,
+      "classification_5task_acc": 0.652,
+      "log_loss": 0.906,
+      "brier_score": 0.521,
+      "ece": 0.179,
+      "wall_time_sec": 105.0,
+      "p50_latency_ms": 2127.5,
+      "vram_gb": 20.4,
+      "subsets": {
+        "aegis2": { "accuracy": 0.82, "selective_acc_09": 0.960 },
+        "boolq": { "accuracy": 0.82, "selective_acc_09": 0.926 },
+        "helpsteer2": { "accuracy": 0.34, "selective_acc_09": null },
+        "massive-en-US": { "accuracy": 0.82, "selective_acc_09": 0.963 },
+        "paws": { "accuracy": 0.60, "selective_acc_09": 0.889 },
+        "vitaminc-dev": { "accuracy": 0.20, "selective_acc_09": 0.500 }
+      }
+    },
+    "CLM-8B (Local)": {
+      "type": "Contrastive LM (action-first)",
+      "note": "levbench official run was omitted because dynamic HTTP serial calls force Cold inference (500-800ms) without leveraging persistent Action Caching (115ms tick). See scripts/verify_action_caching_clm.py for action-caching empirical measurements.",
+      "evaluated": false
+    }
+  }
+}

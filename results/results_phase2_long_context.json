@@ -1,0 +1,67 @@
+{
+  "benchmark": "Phase 2: Long-Context Contracts & Enterprise Specs",
+  "num_questions": 15,
+  "context_length_tokens": "2,000 - 4,500+",
+  "documents": [
+    "Enterprise Individual Work Agreement (個別業務合意書)",
+    "Non-Disclosure Agreement & Technical Specifications (NDA / API仕様書)"
+  ],
+  "models": {
+    "Jev (Cloud API)": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "total_time_sec": 3.3,
+      "avg_latency_sec": 0.22,
+      "architecture": "Cloud Decision Model with Cross-Attention"
+    },
+    "Lev (Local 8B)": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "total_time_sec": 358.2,
+      "avg_latency_sec": 23.88,
+      "architecture": "Full Attention Decision Head (Cold prefill per question)"
+    },
+    "Jeff-0.8B (Local)": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "total_time_sec": 8.4,
+      "avg_latency_sec": 0.56,
+      "architecture": "Lightweight 0.8B Cross-Encoder Decision Model"
+    },
+    "Qwen3.5-4B (SGLang)": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "total_time_sec": 42.8,
+      "avg_latency_sec": 2.85,
+      "architecture": "Decoder LLM + Radix Tree Prefix KV Cache"
+    },
+    "Kev-4B (Local)": {
+      "accuracy": 0.60,
+      "correct": 9,
+      "total": 15,
+      "total_time_sec": 3.7,
+      "avg_latency_sec": 0.25,
+      "architecture": "Gated DeltaNet Linear Attention (Fixed-state recurrent compression bottleneck)"
+    },
+    "CLM-8B (Cold)": {
+      "accuracy": 0.20,
+      "correct": 3,
+      "total": 15,
+      "total_time_sec": 161.7,
+      "avg_latency_sec": 10.78,
+      "architecture": "Bi-Encoder Dense Contrastive LM without Caching"
+    },
+    "CLM-8B (Action Cached)": {
+      "accuracy": 0.40,
+      "correct": 6,
+      "total": 15,
+      "total_time_sec": 11.69,
+      "avg_latency_sec": 0.78,
+      "architecture": "Bi-Encoder Dense Contrastive LM with Action Caching (Mean-pooling representation dilution)"
+    }
+  }
+}
